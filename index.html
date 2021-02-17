@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__top">
+            <a class="logo__link" href="#">
+                <img class="logo" src="images/logo.png" alt="logo">
+                <img class="logo-mobile" src="images/logo-mobile.png" alt="logo">
+            </a>
+            <p class="header__worktime">пн - пт 09:00 - 20:00, сб 09:00 - 18:00</p>
+            <p class="header__address">г. Краснодар, ул.Васнецова, 44</p>
+            <button class="menu__btn"></button>
+            <div class="header__phone">
+                <a class="header__phone-link" href="#">заказать звонок</a>
+                <a class="header__phone-number" href="tel:88612012250">8 (861) 201-22-50</a>
+            </div>
+        </div>
+        <div class="header__wrapper">
+            <div class="header__bottom">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__list-link" href="#">Главная</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#">Услуги стоматологии</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#">Врачи центра</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#">Цены на лечение</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#">фото наших работ</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#">О клинике</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#">Статьи</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a class="header__btn popup-form" href="#registration-form">Запись на приём</a>
+            </div>
+        </div>
+    </header>
+
+    <form id="registration-form" class="form-popup mfp-hide">
+        <div class="form-popup__inner">
+            <div class="form-popup__info">
+                <h1 class="form-popup__title">Запишитесь на приём</h1>
+                <p class="form-popup__text">Заполните простую форму, и наш специалист
+                    свяжется с вами в ближайшее время</p>
+                <div class="from-popup__inputs">
+                    <input class="from-popup__input" type="text" placeholder="Ваше имя">
+                    <input class="from-popup__input phone" type="tel" placeholder="Ваш телефон">
+                    <label class="label-checkbox" for="checkbox-form-popup">
+                        <input class="checkbox" id="checkbox-form-popup" type="checkbox">
+                        <span class="check-style"></span>
+                        Даю согласие на обработку персональных данных
+                    </label>
+                    <button class="from-popup__btn" type="submit">ОТПРАВИТЬ</button>
+                </div>
+            </div>
+            <div class="form-popup-img">
+                <img src="images/form-popup-img.jpg" alt="">
+            </div>
+        </div>
+        <button class="mfp-close" type="button">
+            <img class="mfp-close" src="images/close-form-ico.svg" alt="">
+        </button>
+    </form>
+
+    <section class="top">
+        <div class="top__slider">
+            <div class="top__slider-item">
+                <div class="top__slider-info">
+                    <h1 class="top__slider-title-1">« All-on-4»</h1>
+                    <h2 class="top__slider-subtitle-1">от 160 000 <span>(под ключ)</span></h2>
+                    <p class="top__slider-text">Восстановление зубного ряда всего
+                        за два визита</p>
+                    <a class="top__slider-btn" href="#">подробнее</a>
+                </div>
+                <img class="top__slider-images" src="images/top-slider-1.jpg" alt="">
+            </div>
+            <div class="top__slider-item">
+                <div class="top__slider-info">
+                    <h1 class="top__slider-title-2">Седация<br> <span>медицинским ксеноном</span></h1>
+                    <p class="top__slider-text">Безопасная анестезия для вашего ребёнка</p>
+                    <a class="top__slider-btn" href="#">подробнее</a>
+                </div>
+                <img class="top__slider-images" src="images/top-slider-2.jpg" alt="">
+            </div>
+            <div class="top__slider-item">
+                <div class="top__slider-info">
+                    <h1 class="top__slider-title-3">Лечим зубы под <br><span>микроскопом</span></h1>
+                    <p class="top__slider-text">Инновационная технология для отличного результата</p>
+                    <a class="top__slider-btn" href="#">подробнее</a>
+                </div>
+                <img class="top__slider-images" src="images/top-slider-3.jpg" alt="">
+            </div>
+            <div class="top__slider-item">
+                <div class="top__slider-info">
+                    <h1 class="top__slider-title-4">Все виды стоматологических<br> услуг в <span>краснодаре</span></h1>
+                    <a class="top__slider-btn" href="#">подробнее</a>
+                </div>
+                <img class="top__slider-images" src="images/top-slider-4.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="patients">
+        <div class="container">
+            <h1 class="patients__title">Наши пациенты улыбаются</h1>
+            <div class="patients-popup">
+                <div class="patients__slider">
+                    <div class="patients__slider-item">
+                        <a href="images/patients-slider-1.jpg">
+                            <img src="images/patients-slider-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="patients__slider-item">
+                        <a href="images/patients-slider-2.jpg">
+                            <img src="images/patients-slider-2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="patients__slider-item">
+                        <a href="images/patients-slider-3.jpg">
+                            <img src="images/patients-slider-3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="patients__slider-item">
+                        <a href="images/patients-slider-4.jpg">
+                            <img src="images/patients-slider-4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="patients__slider-item">
+                        <a href="images/patients-slider-1.jpg">
+                            <img src="images/patients-slider-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="patients__slider-item">
+                        <a href="images/patients-slider-2.jpg">
+                            <img src="images/patients-slider-2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="patients__slider-item">
+                        <a href="images/patients-slider-3.jpg">
+                            <img src="images/patients-slider-3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="patients__slider-item">
+                        <a href="images/patients-slider-4.jpg">
+                            <img src="images/patients-slider-4.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h1 class="services__title">Выберите нужную вам услугу</h1>
+            <div class="services__wrapper">
+                <div class="services__item-column">
+                    <div class="services__item">
+                        <img src="images/services-ico-1.svg" alt="">
+                        <h3 class="services__item-title">Если зуб разрушен
+                            или отсутствует</h3>
+                        <ul class="services__list">
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Имплантация зубов</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Безметалловые коронки</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Одномоментная имплантация</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Цельнокерамические вкладки</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Металлокерамические коронки</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Коронки из оксида циркония</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Цельнокерамические коронки</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="services__item">
+                        <img src="images/services-ico-2.svg" alt="">
+                        <h3 class="services__item-title">Сделать зубы белее</h3>
+                        <ul class="services__list">
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Отбеливание</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Внутриканальное отбеливание</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="services__item-column">
+                    <div class="services__item">
+                        <img src="images/services-ico-3.svg" alt="">
+                        <h3 class="services__item-title">Если зуб болит</h3>
+                        <ul class="services__list">
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Лечение зубов</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Извлечение инородных
+                                    тел из канала</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Удаление кисты зуба</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Лазерная хирургия зубов</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="services__item">
+                        <img src="images/services-ico-4.svg" alt="">
+                        <h3 class="services__item-title">Сделать зубы красивыми, восстановить форму</h3>
+                        <ul class="services__list">
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Виниры</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Эстетическая реставрация</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="services__item-column">
+                    <div class="services__item">
+                        <img src="images/services-ico-5.svg" alt="">
+                        <h3 class="services__item-title">Проблемы с дёснами</h3>
+                        <ul class="services__list">
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Лечение дёсен</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Пародонтологические операции</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="services__item">
+                        <img src="images/services-ico-6.svg" alt="">
+                        <h3 class="services__item-title">Сделать зубы ровными, выровнять прикус</h3>
+                        <ul class="services__list">
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Трейнеры</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Элайнеры</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Исправление прикуса</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Съемные ортодонтические аппараты</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Несъёмные аппараты для исправления прикуса</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Брекеты Damon</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Лингвальные брекеты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="services__item-column">
+                    <div class="services__item">
+                        <img src="images/services-ico-7.svg" alt="">
+                        <h3 class="services__item-title">Детская стоматология</h3>
+                        <ul class="services__list">
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Удаление молочных зубов</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Лечение кариеса детям</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Лечение пульпита детям</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Лечение зубов под седацией</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Коррекция уздечки губы или языка</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="services__item">
+                        <img src="images/services-ico-8.svg" alt="">
+                        <h3 class="services__item-title">Если отсутствует большое количество зубов</h3>
+                        <ul class="services__list">
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Съемное протезирование</a>
+                            </li>
+                            <li class="services__list-item">
+                                <a class="services__list-link" href="#">Протезирование All-On-4</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video">
+        <div class="container">
+            <div class="video_wrapper">
+                <div class="video__info">
+                    <h1 class="video__title">Стоматологическая клиника
+                        <span>Евродент-Люкс</span>
+                    </h1>
+                    <p class="video__text">За более чем 10-летнюю историю, мы стали
+                        мастерами своего дела, поэтому нам есть,
+                        чем гордиться</p>
+                </div>
+                <a class="video-popup popup-youtube" href="https://www.youtube.com/watch?v=-F2Msu4CvYo">
+                    <img src="images/video-img.jpg" alt="">
+                    <img class="video-popup-play" src="images/play-ico.svg" alt="">
+                </a>
+            </div>
+    </section>
+
+    <section class="appointment">
+        <div class="container">
+            <h1 class="appointment__title">Запишитесь на приём</h1>
+            <form class="appointment__form">
+                <div class="appointment__inputs">
+                    <input class="appointment__input" type="text" placeholder="Ваше имя">
+                    <input class="appointment__input phone" type="tel" placeholder="Ваш телефон">
+                    <button class="appointment__btn" type="submit">ОТПРАВИТЬ</button>
+                </div>
+                <label class="label-checkbox" for="checkbox">
+                    <input class="checkbox" id="checkbox" type="checkbox">
+                    <span class="check-style"></span>
+                    Даю согласие на обработку персональных данных
+                </label>
+            </form>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <h1 class="reviews__title">Отзывы наших клиентов</h1>
+            <div class="reviews__slider">
+                <div class="reviews__slider-item">
+                    <a class="reviews-popup popup-youtube" data-fancybox
+                        href="https://www.youtube.com/watch?v=-F2Msu4CvYo">
+                        <img src="images/reviews-slider-1.jpg" alt="">
+                    </a>
+                    <div class="reviews__slider-info">
+                        <h3 class="reviews__slider-name">Ирина Соловьева</h3>
+                        <div class="reviews__slider-info-wrapper">
+                            <p class="reviews__slider__service">Протезирование зубов</p>
+                            <p class="reviews__slider-date">12.10.2019</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__slider-item">
+                    <a class="reviews-popup popup-youtube" data-fancybox
+                        href="https://www.youtube.com/watch?v=-F2Msu4CvYo">
+                        <img src="images/reviews-slider-2.jpg" alt="">
+                    </a>
+                    <div class="reviews__slider-info">
+                        <h3 class="reviews__slider-name">Павел Смирнов</h3>
+                        <div class="reviews__slider-info-wrapper">
+                            <p class="reviews__slider__service">Лечение зубов, чистка зубов</p>
+                            <p class="reviews__slider-date">12.10.2019</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__slider-item">
+                    <img src="images/reviews-slider-3.jpg" alt="">
+                </div>
+                <div class="reviews__slider-item">
+                    <a class="reviews-popup" data-fancybox href="https://www.youtube.com/watch?v=-F2Msu4CvYo">
+                        <img src="images/reviews-slider-1.jpg" alt="">
+                    </a>
+                    <div class="reviews__slider-info">
+                        <h3 class="reviews__slider-name">Ирина Соловьева</h3>
+                        <div class="reviews__slider-info-wrapper">
+                            <p class="reviews__slider__service">Протезирование зубов</p>
+                            <p class="reviews__slider-date">12.10.2019</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__slider-item">
+                    <a class="reviews-popup" data-fancybox href="https://www.youtube.com/watch?v=-F2Msu4CvYo">
+                        <img src="images/reviews-slider-2.jpg" alt="">
+                    </a>
+                    <div class="reviews__slider-info">
+                        <h3 class="reviews__slider-name">Павел Смирнов</h3>
+                        <div class="reviews__slider-info-wrapper">
+                            <p class="reviews__slider__service">Лечение зубов, чистка зубов</p>
+                            <p class="reviews__slider-date">12.10.2019</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__slider-item">
+                    <img src="images/reviews-slider-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="interior">
+        <div class="container">
+            <h1 class="interior__title">В нашей клинике вам будет комфортно и удобно</h1>
+            <p class="interior__text">Это гарантия вашего комфорта и безопасности</p>
+            <div class="interior-popup">
+                <div class="interior__slider">
+                    <div class="interior__slider-item">
+                        <a href="images/interior-slider-1.jpg"><img src="images/interior-slider-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="interior__slider-item">
+                        <a href="images/interior-slider-2.jpg"><img src="images/interior-slider-2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="interior__slider-item">
+                        <a href="images/interior-slider-3.jpg"><img src="images/interior-slider-3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="interior__slider-item">
+                        <a href="images/interior-slider-1.jpg"><img src="images/interior-slider-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="interior__slider-item">
+                        <a href="images/interior-slider-2.jpg"><img src="images/interior-slider-2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="interior__slider-item">
+                        <a href="images/interior-slider-3.jpg"><img src="images/interior-slider-3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="equipments">
+        <div class="container">
+            <h1 class="equipments__title">У нас вы обслуживаетесь только
+                на современном оборудовании премиум- класса</h1>
+            <p class="equipments__text">Это гарантия вашего комфорта и безопасности</p>
+        </div>
+        <div class="equipments__items-wrapper">
+            <div class="equipments__items">
+                <div class="equipments__item">
+                    <img src="images/equipments-img-1.jpg" alt="">
+                    <div class="equipments__item-bottom">
+                        <p class="equipments__item-name">Наименование оборудования</p>
+                    </div>
+                </div>
+                <div class="equipments__item">
+                    <img src="images/equipments-img-2.jpg" alt="">
+                    <div class="equipments__item-bottom">
+                        <p class="equipments__item-name">Очень длинное наименование
+                            оборудования</p>
+                    </div>
+                </div>
+                <div class="equipments__item">
+                    <img src="images/equipments-img-3.jpg" alt="">
+                    <div class="equipments__item-bottom">
+                        <p class="equipments__item-name">Наименование оборудования</p>
+                    </div>
+                </div>
+                <div class="equipments__item">
+                    <img src="images/equipments-img-4.jpg" alt="">
+                    <div class="equipments__item-bottom">
+                        <p class="equipments__item-name">Наименование оборудования</p>
+                    </div>
+                </div>
+                <div class="equipments__item">
+                    <img src="images/equipments-img-5.jpg" alt="">
+                    <div class="equipments__item-bottom">
+                        <p class="equipments__item-name">Очень длинное наименование
+                            оборудования</p>
+                    </div>
+                </div>
+                <div class="equipments__item">
+                    <img src="images/equipments-img-1.jpg" alt="">
+                    <div class="equipments__item-bottom">
+                        <p class="equipments__item-name">Наименование оборудования</p>
+                    </div>
+                </div>
+                <div class="equipments__item">
+                    <img src="images/equipments-img-2.jpg" alt="">
+                    <div class="equipments__item-bottom">
+                        <p class="equipments__item-name">Очень длинное наименование
+                            оборудования</p>
+                    </div>
+                </div>
+                <div class="equipments__item">
+                    <img src="images/equipments-img-3.jpg" alt="">
+                    <div class="equipments__item-bottom">
+                        <p class="equipments__item-name">Наименование оборудования</p>
+                    </div>
+                </div>
+                <div class="equipments__item">
+                    <img src="images/equipments-img-4.jpg" alt="">
+                    <div class="equipments__item-bottom">
+                        <p class="equipments__item-name">Наименование оборудования</p>
+                    </div>
+                </div>
+                <div class="equipments__item">
+                    <img src="images/equipments-img-5.jpg" alt="">
+                    <div class="equipments__item-bottom">
+                        <p class="equipments__item-name">Очень длинное наименование
+                            оборудования</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <setion class="doctor">
+        <div class="doctor__inner">
+            <div class="doctor__content">
+                <h3 class="doctor__title">главный врач</h3>
+                <p class="doctor__text">«Наша клиника оснащена шикарным оборудованием, но я знаю что главный фактор в
+                    лечении - это люди. Поэтому в мою команду
+                    я пригласил только настоящих профессионалов в своей области, чтобы вы могли получить гарантированно
+                    качественный
+                    результат».</p>
+                <h3 class="doctor__name">Тимченко Святослав Викторович</h3>
+            </div>
+            <div class="doctor__images">
+                <img class="doctor__line" src="images/doctor-line-img.png" alt="">
+                <img class="doctor__img" src="images/doctor-img.png" alt="">
+            </div>
+        </div>
+    </setion>
+
+    <section class="professionals">
+        <div class="container">
+            <h1 class="professionals__title">Доверь свое здоровье настоящим профессионалам</h1>
+            <div class="professionals__slider">
+                <a class="professionals__slider-link" href="#">
+                    <div class="professionals__slider-item">
+                        <img src="images/professionals-slider-1.jpg" alt="">
+                        <h3 class="professionals__slider-name">Тимченко Святослав Викторович</h3>
+                        <p class="professionals__slider-info">Главный врач. Врач-стоматолог
+                            по специальности ортопедия, хирургия, имплантация.</p>
+                    </div>
+                </a>
+                <a class="professionals__slider-link" href="#">
+                    <div class="professionals__slider-item">
+                        <img src="images/professionals-slider-2.jpg" alt="">
+                        <h3 class="professionals__slider-name">Самойлик Михаил Михайлович</h3>
+                        <p class="professionals__slider-info">Врач-стоматолог по специальности терапия и ортопедия.
+                            Кандидат
+                            медицинских наук.</p>
+                    </div>
+                </a>
+                <a class="professionals__slider-link" href="#">
+                    <div class="professionals__slider-item">
+                        <img src="images/professionals-slider-3.jpg" alt="">
+                        <h3 class="professionals__slider-name">Степнова Марина Александровна</h3>
+                        <p class="professionals__slider-info">Врач-стоматолог по специальности терапия и ортопедия.
+                            Детский
+                            врач-стоматолог.</p>
+                    </div>
+                </a>
+                <a class="professionals__slider-link" href="#">
+                    <div class="professionals__slider-item">
+                        <img src="images/professionals-slider-4.jpg" alt="">
+                        <h3 class="professionals__slider-name">Юшин Андрей Викторович</h3>
+                        <p class="professionals__slider-info">Врач-стоматолог по специальности терапия и ортопедия.</p>
+                    </div>
+                </a>
+                <a class="professionals__slider-link" href="#">
+                    <div class="professionals__slider-item">
+                        <img src="images/professionals-slider-1.jpg" alt="">
+                        <h3 class="professionals__slider-name">Тимченко Святослав Викторович</h3>
+                        <p class="professionals__slider-info">Главный врач. Врач-стоматолог
+                            по специальности ортопедия, хирургия, имплантация.</p>
+                    </div>
+                </a>
+                <a class="professionals__slider-link" href="#">
+                    <div class="professionals__slider-item">
+                        <img src="images/professionals-slider-2.jpg" alt="">
+                        <h3 class="professionals__slider-name">Самойлик Михаил Михайлович</h3>
+                        <p class="professionals__slider-info">Врач-стоматолог по специальности терапия и ортопедия.
+                            Кандидат
+                            медицинских наук.</p>
+                    </div>
+                </a>
+                <a class="professionals__slider-link" href="#">
+                    <div class="professionals__slider-item">
+                        <img src="images/professionals-slider-3.jpg" alt="">
+                        <h3 class="professionals__slider-name">Степнова Марина Александровна</h3>
+                        <p class="professionals__slider-info">Врач-стоматолог по специальности терапия и ортопедия.
+                            Детский
+                            врач-стоматолог.</p>
+                    </div>
+                </a>
+                <a class="professionals__slider-link" href="#">
+                    <div class="professionals__slider-item">
+                        <img src="images/professionals-slider-4.jpg" alt="">
+                        <h3 class="professionals__slider-name">Юшин Андрей Викторович</h3>
+                        <p class="professionals__slider-info">Врач-стоматолог по специальности терапия и ортопедия.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__inner">
+                <div class="advantages__left">
+                    <img src="images/advantages-img.jpg" alt="">
+                    <h1 class="advantages__title">Почему 90% пациентов становятся нашими постоянными клиентам</h1>
+                </div>
+                <div class="advantages__right">
+                    <div class="advantages__right-items">
+                        <div class="advantages__right-item">
+                            <img src="images/advantages-ico-1.svg" alt="">
+                            <h3 class="advantages__right-title">Всегда прозрачные цены</h3>
+                        </div>
+                        <div class="advantages__right-item">
+                            <img src="images/advantages-ico-2.svg" alt="">
+                            <h3 class="advantages__right-title">Экономия времени</h3>
+                        </div>
+                        <div class="advantages__right-item">
+                            <img src="images/advantages-ico-3.svg" alt="">
+                            <h3 class="advantages__right-title">Комфорт</h3>
+                        </div>
+                        <div class="advantages__right-item">
+                            <img src="images/advantages-ico-4.svg" alt="">
+                            <h3 class="advantages__right-title">Безопасность</h3>
+                        </div>
+                        <div class="advantages__right-item">
+                            <img src="images/advantages-ico-5.svg" alt="">
+                            <h3 class="advantages__right-title">Детское отделение</h3>
+                        </div>
+
+                    </div>
+                    <div class="advantages__righ-info">
+                        <p class="advantages__righ-text">Стоимость всегда озвучивается до начала лечения. Никаких
+                            хитростей
+                            с доплатами. Мы стремимся выполнить работу так, чтобы
+                            видеть вашу благодарную улыбку.</p>
+                        <p class="advantages__righ-text">В клинике собраны специалисты всех направлений. Рентген и 3D
+                            cнимки
+                            делаются на месте. А наличие в центре лаборатории
+                            сокращает количество визитов в клинику.</p>
+                        <p class="advantages__righ-text">Эргономичные установки обеспечивают комфорт лечения даже во
+                            время
+                            длительных визитов. Слаженная работа врач-ассистент
+                            обеспечивает скорость процесса.</p>
+                        <p class="advantages__righ-text">3-х ступенчатая обработка инструментов согласно СанПин и
+                            спользование немецких автоклавов последнего поколения Melag
+                            обеспечивают абсолютную стерильность.</p>
+                        <p class="advantages__righ-text">Использование седации ксеноном позволяет лечить наших маленьких
+                            пациентов с минимальным для них стрессом. Также для
+                            детей выделена специальная комната ожидания.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="appointment-bottom">
+        <div class="container">
+            <h1 class="appointment-bottom__title">Запишитесь на приём</h1>
+            <form class="appointment__form">
+                <div class="appointment__inputs">
+                    <input class="appointment__input" type="text" placeholder="Ваше имя">
+                    <input class="appointment__input phone" type="tel" placeholder="Ваш телефон">
+                    <button class="appointment__btn" type="submit">ОТПРАВИТЬ</button>
+                </div>
+                <label class="label-checkbox" for="checkbox-bottom">
+                    <input class="checkbox" id="checkbox-bottom" type="checkbox">
+                    <span class="check-style"></span>
+                    Даю согласие на обработку персональных данных
+                </label>
+            </form>
+        </div>
+    </section>
+
+    <section class="tour">
+        <h1 class="tour__title">Посетите нашу клинику прямо сейчас с помощью 3D Тура</h1>
+        <img src="images/tour-img.jpg" alt="">
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__item">
+                    <img src="images/logo-footer.png" alt="">
+                    <p class="footer__info">Центр современной стоматологии
+                        2019 © Все права защищены.
+                        Лицензия № ЛО-23-01-010014</p>
+                </div>
+                <div class="footer__item">
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Главная</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Услуги стоматологии</a>
+                            </li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Врачи центра</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Цены на лечение</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">фото наших работ</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">О клинике</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Статьи</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__item">
+                    <p class="footer__worktime">пн - пт 09:00 - 20:00, сб 09:00 - 18:00</p>
+                    <p class="footer__address">г. Краснодар, ул.Васнецова, 44</p>
+                    <p class="footer__instagram">@eurodentlux</p>
+                    <p class="footer__email"><a href="mailto:eurodent777@mail.ru">eurodent777@mail.ru</a></p>
+                    <a class="footer__phone" href="tel:88612012250">8 (861) 201-22-50</a><br><br>
+                    <a class="footer__phone-link" href="#">заказать звонок</a>
+                </div>
+                <div class="footer__item">
+                    <p class="footer__credit">Кредит под минимальный процент
+                        (от 1,5%)</p>
+                    <div class="footer__credit-images">
+                        <img src="images/bank-cart-1.svg" alt="">
+                        <img src="images/bank-cart-2.svg" alt="">
+                        <img src="images/bank-cart-3.svg" alt="">
+                        <img src="images/bank-cart-4.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
