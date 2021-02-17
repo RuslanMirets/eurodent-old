@@ -747,6 +747,7 @@ body {
     margin-top: 118px;
 }
 .doctor__title {
+    font-weight: 300;
     font-size: 15px;
     line-height: 36px;
     text-transform: uppercase;
