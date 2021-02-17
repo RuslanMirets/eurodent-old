@@ -622,7 +622,7 @@ body {
     text-align: center;
     padding: 50px 49px;
 }
-.reviews__slider-item a{
+.reviews__slider-item a {
     outline: none;
 }
 .reviews-popup.popup-youtube {
@@ -852,6 +852,7 @@ body {
 .advantages {
     background-color: #67bc9e;
     max-width: 1920px;
+    width: 100%;
 }
 .advantages__inner {
     display: flex;
@@ -860,11 +861,14 @@ body {
 }
 .advantages__left {
     transform: translateY(-30px);
+    z-index: 1000;
 }
+
 .advantages__title {
     padding-top: 67px;
     color: #fff;
     width: 450px;
+    z-index: 1000;
 }
 .advantages__right {
     display: flex;
@@ -872,6 +876,7 @@ body {
     padding-left: 28px;
     border-left: 1px solid #fff;
     height: 650px;
+    z-index: 1000;
 }
 
 .advantages__right-item img {
@@ -895,6 +900,37 @@ body {
     line-height: 20px;
     width: 356px;
 }
+
+.advantages__block-1 {
+    position: absolute;
+    left: 0;
+    width: 38%;
+    height: 125px;
+    background-color: #6cc0a2;
+    transform: translateY(-230px);
+    z-index: 500;
+}
+
+.advantages__block-2 {
+    position: absolute;
+    right: 0;
+    width: 60%;
+    height: 157px;
+    background-color: #6cc0a2;
+    transform: translateY(-750px);
+    z-index: 500;
+}
+
+.advantages__block-3 {
+    position: absolute;
+    right: 0;
+    width: 43%;
+    height: 183px;
+    background-color: #6cc0a2;
+    transform: translateY(-183px);
+    z-index: 500;
+}
+
 .appointment-bottom {
     background-color: #fff;
     height: 300px;
