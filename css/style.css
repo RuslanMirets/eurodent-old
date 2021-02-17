@@ -622,6 +622,9 @@ body {
     text-align: center;
     padding: 50px 49px;
 }
+.reviews__slider-item a{
+    outline: none;
+}
 .reviews-popup.popup-youtube {
     position: relative;
 }
