@@ -133,7 +133,7 @@ body {
     display: none;
 }
 .menu__list {
-    max-width: 915px;
+    max-width: 2000px;
     display: flex;
     justify-content: space-between;
 }
@@ -391,8 +391,6 @@ body {
     margin-top: 50px;
     padding-bottom: 35px;
     text-align: center;
-}
-.patients__slider.uk-slider-items {
 }
 .slider__arrow.patients-slider-arrow {
     margin-left: 0;
