@@ -1,29 +1,6 @@
 $(function () {
 
-    $('.top__slider').slick({
-        arrows: true,
-        dots: true,
-        autoplay: true,
-        speed: 1000,
-        prevArrow: '<button class="slider-btn__left"><img src="images/arrow-left.svg" alt=""></button>',
-        nextArrow: '<button class="slider-btn__right"><img src="images/arrow-right.svg" alt=""></button>',
-        responsive: [
-            {
-                breakpoint: 1800,
-                settings: {
-                    dots: false,
-                }
-            },
-            {
-                breakpoint: 1065,
-                settings: {
-                    arrows: false,
-                    dots: false,
-                }
-            }
-        ]
-    });
-
+   
     $('.patients__slider').slick({
         arrows: true,
         slidesToShow: 4,

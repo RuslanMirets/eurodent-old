@@ -13,6 +13,11 @@ a {
     color: inherit;
 }
 
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
 ul,
 li {
     list-style: none;
@@ -256,7 +261,7 @@ body {
 .mfp-close:hover {
     background-color: #f39035;
 }
-.top__slider {
+/* .top__slider {
     width: 100%;
     background-color: #fff;
 }
@@ -355,61 +360,132 @@ body {
     line-height: 29px;
     text-transform: uppercase;
     color: #f39035;
+} */
+.top__slider {
+    background-color: #fff;
 }
-.slider-btn__left {
-    padding: 12px 12px;
-    border: none;
-    background: rgb(103, 188, 158);
-    cursor: pointer;
-    z-index: 100;
-    outline: none;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 50px;
-    transition: all 0.2s;
-}
-.slider-btn__left:hover {
-    background: rgba(103, 188, 158, 0.9);
-}
-.slider-btn__right {
-    padding: 12px 12px;
-    border: none;
-    background: rgb(103, 188, 158);
-    cursor: pointer;
-    z-index: 100;
-    outline: none;
-    position: absolute;
-    bottom: 50%;
-    transform: translateY(50%);
-    right: 50px;
-    transition: all 0.2s;
-}
-.slider-btn__right:hover {
-    background: rgba(103, 188, 158, 0.9);
-}
-.slick-dots {
+.top__slider-item {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 19%;
-    bottom: 5%;
+    justify-content: space-between;
 }
-.slick-dots button {
-    font-size: 0;
-    width: 10px;
-    height: 10px;
+.top__slider-info {
+    margin-top: 112px;
+    margin-left: 400px;
+}
+.top__slider-btn {
+    padding: 20px 65px;
+    color: #000;
+    outline: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    border-radius: 60px;
+    transition: all 0.3s;
+}
+.top__slider-btn:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #f39035;
+    border: 1px solid transparent;
+}
+.slider__arrow {
+    padding: 17px 22px;
+    background: rgba(103, 188, 158, 1);
+    transition: all 0.3s;
+    color: #fff;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+.slider__arrow:hover {
+    color: #fff;
+    background: rgba(103, 188, 158, 0.9);
+}
+.uk-icon:not(.uk-preserve) [stroke*='#']:not(.uk-preserve) {
+    stroke: currentcolor;
+    color: #fff;
+}
+.uk-dotnav.slider-dotnav-top {
+    transform: translate(-550px, -50px);
+}
+.uk-dotnav > * > * {
     background-color: #67bc9e;
     border: none;
-    border-radius: 50%;
-    padding: 0;
-    outline: none;
-    margin-left: 17px;
 }
-.slick-active button {
-    width: 16px;
-    height: 16px;
+.uk-dotnav > * > *:hover {
+    background-color: #67bc9e;
+}
+.uk-dotnav > .uk-active > * {
+    width: 21px;
+    background: #67bc9e;
+    border-radius: 10px;
+    transition: all .3s;
+}
+.top__slider-title-1 {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.top__slider-subtitle-1 {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+}
+.top__slider-subtitle-1 span {
+    font-weight: 900;
+    font-size: 41px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #f39035;
+}
+.top__slider-text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 39px;
+}
+.top__slider-title-2 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.top__slider-title-2 span {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #f39035;
+}
+.top__slider-title-3 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.top__slider-title-3 span {
+    font-weight: 900;
+    font-size: 41px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #f39035;
+}
+.top__slider-title-4 {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.top__slider-title-4 span {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #f39035;
 }
 .patients__title {
     margin-top: 50px;
