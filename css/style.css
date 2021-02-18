@@ -302,7 +302,7 @@ body {
     color: #fff;
     background: rgba(103, 188, 158, 0.9);
 }
-.uk-icon:not(.uk-preserve) [stroke*='#']:not(.uk-preserve) {
+.uk-icon:not(.uk-preserve) [stroke*="#"]:not(.uk-preserve) {
     stroke: currentcolor;
     color: #fff;
 }
@@ -320,7 +320,7 @@ body {
     width: 21px;
     background: #67bc9e;
     border-radius: 10px;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 .top__slider-title-1 {
     font-weight: 900;
@@ -392,9 +392,9 @@ body {
     padding-bottom: 35px;
     text-align: center;
 }
-.patients__slider.uk-slider-items{
+.patients__slider.uk-slider-items {
 }
-.slider__arrow.patients-slider-arrow{
+.slider__arrow.patients-slider-arrow {
     margin-left: 0;
     margin-right: 0;
 }
@@ -610,10 +610,10 @@ body {
     line-height: 24px;
     padding-bottom: 51px;
 }
-.interior-slider-arrow{
+.interior-slider-arrow {
     margin-top: 150px;
 }
-.slider-dotnav-interior{
+.slider-dotnav-interior {
     left: 1100px;
     top: 200px;
 }
@@ -738,40 +738,6 @@ body {
     padding: 50px 0 50px;
     text-align: center;
 }
-
-.professionals__slider-btn__left {
-    padding: 12px 12px;
-    border: none;
-    background: rgb(103, 188, 158);
-    cursor: pointer;
-    z-index: 100;
-    outline: none;
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-    left: -20px;
-    transition: all 0.3s;
-}
-.professionals__slider-btn__left:hover {
-    background: rgba(103, 188, 158, 0.9);
-}
-.professionals__slider-btn__right {
-    padding: 12px 12px;
-    border: none;
-    background: rgb(103, 188, 158);
-    cursor: pointer;
-    z-index: 100;
-    outline: none;
-    position: absolute;
-    bottom: 60%;
-    transform: translateY(50%);
-    right: 5px;
-    transition: all 0.3s;
-}
-.professionals__slider-btn__right:hover {
-    background: rgba(103, 188, 158, 0.9);
-}
-
 .professionals__slider-name {
     padding: 23px 0 11px;
     font-size: 16px;
@@ -791,7 +757,14 @@ body {
 .professionals__slider-item:hover {
     transform: translateY(30px);
 }
-
+.professionals-slider-arrow-left {
+    left: -140px;
+    top: 175px;
+}
+.professionals-slider-arrow-right {
+    right: -140px;
+    top: 175px;
+}
 .advantages {
     background-color: #67bc9e;
     max-width: 1920px;
