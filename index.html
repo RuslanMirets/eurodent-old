@@ -76,7 +76,7 @@
 
     <section class="top">
         <div class="top__slider uk-position-relative uk-visible-toggle" tabindex="-1"
-            uk-slider="center: true; autoplay: true; autoplay-interval: 50000">
+            uk-slider="center: true; autoplay: true; autoplay-interval: 5000">
             <ul class="uk-slider-items uk-grid uk-grid-match" uk-height-viewport="offset-top: true; offset-bottom: 50">
                 <li class="uk-width-1-1">
                     <div class="uk-cover-container">
@@ -382,74 +382,9 @@
     <section class="reviews">
         <div class="container">
             <h1 class="reviews__title">Отзывы наших клиентов</h1>
-            <!-- <div class="reviews__slider">
-                <div class="reviews__slider-item">
-                    <a class="reviews-popup popup-youtube" data-fancybox
-                        href="https://www.youtube.com/watch?v=-F2Msu4CvYo">
-                        <img src="images/reviews-slider-1.jpg" alt="">
-                    </a>
-                    <div class="reviews__slider-info">
-                        <h3 class="reviews__slider-name">Ирина Соловьева</h3>
-                        <div class="reviews__slider-info-wrapper">
-                            <p class="reviews__slider__service">Протезирование зубов</p>
-                            <p class="reviews__slider-date">12.10.2019</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="reviews__slider-item">
-                    <a class="reviews-popup popup-youtube" data-fancybox
-                        href="https://www.youtube.com/watch?v=-F2Msu4CvYo">
-                        <img src="images/reviews-slider-2.jpg" alt="">
-                    </a>
-                    <div class="reviews__slider-info">
-                        <h3 class="reviews__slider-name">Павел Смирнов</h3>
-                        <div class="reviews__slider-info-wrapper">
-                            <p class="reviews__slider__service">Лечение зубов, чистка зубов</p>
-                            <p class="reviews__slider-date">12.10.2019</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="reviews__slider-item reviews-popup">
-                    <a href="images/reviews-slider-3-big.jpg">
-                        <img src="images/reviews-slider-3.jpg" alt="">
-                    </a>
-                </div>
-                <div class="reviews__slider-item">
-                    <a class="reviews-popup popup-youtube" data-fancybox
-                        href="https://www.youtube.com/watch?v=-F2Msu4CvYo">
-                        <img src="images/reviews-slider-1.jpg" alt="">
-                    </a>
-                    <div class="reviews__slider-info">
-                        <h3 class="reviews__slider-name">Ирина Соловьева</h3>
-                        <div class="reviews__slider-info-wrapper">
-                            <p class="reviews__slider__service">Протезирование зубов</p>
-                            <p class="reviews__slider-date">12.10.2019</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="reviews__slider-item">
-                    <a class="reviews-popup popup-youtube" data-fancybox
-                        href="https://www.youtube.com/watch?v=-F2Msu4CvYo">
-                        <img src="images/reviews-slider-2.jpg" alt="">
-                    </a>
-                    <div class="reviews__slider-info">
-                        <h3 class="reviews__slider-name">Павел Смирнов</h3>
-                        <div class="reviews__slider-info-wrapper">
-                            <p class="reviews__slider__service">Лечение зубов, чистка зубов</p>
-                            <p class="reviews__slider-date">12.10.2019</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="reviews__slider-item reviews-popup">
-                    <a href="images/reviews-slider-3-big.jpg">
-                        <img src="images/reviews-slider-3.jpg" alt="">
-                    </a>
-                </div>
-            </div> -->
             <div class="uk-position-relative" tabindex="-1" uk-slider>
                 <div uk-lightbox="animation: slide">
-                    <ul
-                        class="reviews__slider uk-slider-items uk-child-width-1-3">
+                    <ul class="reviews__slider uk-slider-items uk-child-width-1-3">
                         <li>
                             <div class="reviews__slider-item">
                                 <a class="reviews-popup popup-youtube"
@@ -539,37 +474,76 @@
     </section>
 
     <section class="interior">
-        <div class="container">
-            <h1 class="interior__title">В нашей клинике вам будет комфортно и удобно</h1>
-            <p class="interior__text">Это гарантия вашего комфорта и безопасности</p>
-            <div class="interior-popup">
-                <div class="interior__slider">
-                    <div class="interior__slider-item">
-                        <a href="images/interior-slider-1.jpg"><img src="images/interior-slider-1.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="interior__slider-item">
-                        <a href="images/interior-slider-2.jpg"><img src="images/interior-slider-2.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="interior__slider-item">
-                        <a href="images/interior-slider-3.jpg"><img src="images/interior-slider-3.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="interior__slider-item">
-                        <a href="images/interior-slider-1.jpg"><img src="images/interior-slider-1.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="interior__slider-item">
-                        <a href="images/interior-slider-2.jpg"><img src="images/interior-slider-2.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="interior__slider-item">
-                        <a href="images/interior-slider-3.jpg"><img src="images/interior-slider-3.jpg" alt="">
-                        </a>
-                    </div>
-                </div>
+
+        <div class="interior__slider uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="finite: true">
+            <div class="container">
+                <h1 class="interior__title">В нашей клинике вам будет комфортно и удобно</h1>
+                <p class="interior__text">Это гарантия вашего комфорта и безопасности</p>
             </div>
+            <div uk-lightbox="animation: slide">
+                <ul class="reviews__slider uk-slider-items uk-child-width-1-4">
+                    <li>
+                        <div class="interior__slider-item">
+                            <a href="images/interior-slider-1.jpg"><img src="images/interior-slider-1.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="interior__slider-item">
+                            <a href="images/interior-slider-2.jpg"><img src="images/interior-slider-2.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="interior__slider-item">
+                            <a href="images/interior-slider-3.jpg"><img src="images/interior-slider-3.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="interior__slider-item">
+                            <a href="images/interior-slider-1.jpg"><img src="images/interior-slider-1.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="interior__slider-item">
+                            <a href="images/interior-slider-2.jpg"><img src="images/interior-slider-2.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="interior__slider-item">
+                            <a href="images/interior-slider-3.jpg"><img src="images/interior-slider-3.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="interior__slider-item">
+                            <a href="images/interior-slider-1.jpg"><img src="images/interior-slider-1.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="interior__slider-item">
+                            <a href="images/interior-slider-2.jpg"><img src="images/interior-slider-2.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="interior__slider-item">
+                            <a href="images/interior-slider-3.jpg"><img src="images/interior-slider-3.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a class="slider__arrow interior-slider-arrow uk-light uk-position-center-left uk-position-small" href="#"
+                uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="slider__arrow interior-slider-arrow uk-light uk-position-center-right uk-position-small" href="#"
+                uk-slidenav-next uk-slider-item="next"></a>
+            <ul class="slider-dotnav-interior uk-slider-nav uk-dotnav uk-flex-center uk-position-top-right"
+                data-uk-dotnav="{animation: 'scale', duration: 200}"></ul>
         </div>
     </section>
 

@@ -610,8 +610,12 @@ body {
     line-height: 24px;
     padding-bottom: 51px;
 }
-.interior__slider .slick-dots {
-    transform: translate(350px, -310px);
+.interior-slider-arrow{
+    margin-top: 150px;
+}
+.slider-dotnav-interior{
+    left: 1100px;
+    top: 200px;
 }
 .interior__slider-item a {
     display: block;
