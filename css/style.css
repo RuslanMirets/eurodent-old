@@ -261,106 +261,6 @@ body {
 .mfp-close:hover {
     background-color: #f39035;
 }
-/* .top__slider {
-    width: 100%;
-    background-color: #fff;
-}
-.top__slider-item {
-    position: relative;
-}
-.top__slider-info {
-    width: 533px;
-    position: absolute;
-    top: 35%;
-    transform: translateX(70%);
-}
-.top__slider-images {
-    width: 50%;
-    float: right;
-}
-.top__slider-title-1 {
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
-}
-.top__slider-subtitle-1 {
-    font-weight: 900;
-    font-size: 41px;
-    line-height: 49px;
-    text-transform: uppercase;
-    color: #f39035;
-    padding-bottom: 19px;
-}
-.top__slider-subtitle-1 span {
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 29px;
-    color: #000000;
-}
-.top__slider-text {
-    font-size: 20px;
-    line-height: 24px;
-    padding-bottom: 59px;
-    width: 371px;
-}
-.top__slider-btn {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    text-transform: uppercase;
-    padding: 20px 65px;
-    border: 1px solid #000;
-    border-radius: 60px;
-    transition: all 0.3s;
-}
-.top__slider-btn:hover {
-    background-color: #f39035;
-    color: #fff;
-    border: 1px solid transparent;
-}
-.top__slider-title-2 {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
-    padding-bottom: 19px;
-}
-.top__slider-title-2 span {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 36px;
-    text-transform: uppercase;
-    color: #f39035;
-}
-.top__slider-title-3 {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
-    padding-bottom: 19px;
-}
-.top__slider-title-3 span {
-    font-weight: 900;
-    font-size: 41px;
-    line-height: 49px;
-    text-transform: uppercase;
-    color: #f39035;
-}
-.top__slider-title-4 {
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 29px;
-    text-transform: uppercase;
-    padding-bottom: 57px;
-    margin-top: 50px;
-}
-.top__slider-title-4 span {
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 29px;
-    text-transform: uppercase;
-    color: #f39035;
-} */
 .top__slider {
     background-color: #fff;
 }
@@ -492,48 +392,13 @@ body {
     padding-bottom: 35px;
     text-align: center;
 }
-.patients__slider-item a {
-    outline: none;
+.patients__slider.uk-slider-items{
 }
-.patients__slider-item {
-    padding: 20px 0;
-    transition: all 0.4s;
+.slider__arrow.patients-slider-arrow{
+    margin-left: 0;
+    margin-right: 0;
 }
-.patients__slider-item:hover {
-    transform: scale(1.1);
-}
-.patients__slider-btn__left {
-    padding: 12px 12px;
-    border: none;
-    background: rgb(103, 188, 158);
-    cursor: pointer;
-    z-index: 100;
-    outline: none;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -20px;
-    transition: all 0.3s;
-}
-.patients__slider-btn__left:hover {
-    background: rgba(103, 188, 158, 0.9);
-}
-.patients__slider-btn__right {
-    padding: 12px 12px;
-    border: none;
-    background: rgb(103, 188, 158);
-    cursor: pointer;
-    z-index: 100;
-    outline: none;
-    position: absolute;
-    bottom: 50%;
-    transform: translateY(50%);
-    right: 5px;
-    transition: all 0.3s;
-}
-.patients__slider-btn__right:hover {
-    background: rgba(103, 188, 158, 0.9);
-}
+
 .services {
     margin-top: 49px;
     background-color: #fff;
