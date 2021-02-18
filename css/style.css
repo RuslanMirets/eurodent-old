@@ -566,9 +566,7 @@ body {
 .reviews__slider-item a {
     outline: none;
 }
-.reviews-popup.popup-youtube {
-    position: relative;
-}
+
 .reviews-popup.popup-youtube::before {
     content: url("../images/play-ico.svg");
     position: absolute;
