@@ -42,10 +42,37 @@
                         <li class="menu__item"><a class="menu__list-link" href="#">Контакты</a></li>
                     </ul>
                 </nav>
-                <a class="header__btn popup-form" href="#registration-form">Запись на приём</a>
+                <a class="header__btn popup-form" href="#modal" uk-toggle>Запись на приём</a>
             </div>
         </div>
     </header>
+
+    <div id="modal" uk-modal>
+        <div class="modal__inner">
+            <div class="modal__content">
+                <h1 class="modal__title">Запишитесь на приём</h1>
+                <p class="modal__text">Заполните простую форму, и наш специалист <br>
+                    свяжется с вами в ближайшее время</p>
+                <form class="modal__form" id="modal-form">
+                    <div class="error-message" id="error-modal"></div>
+                    <div class="modal__inputs">
+                        <input class="modal__input name" type="text" placeholder="Ваше имя">
+                        <input class="modal__input phone" id="phone-modal" type="tel" placeholder="Ваш телефон">
+                    </div>
+                    <label class="label-checkbox" for="checkbox-modal">
+                        <input class="checkbox" id="checkbox-modal" name="checkbox-modal" type="checkbox">
+                        <span class="check-style"></span>
+                        Даю согласие на обработку персональных данных
+                    </label>
+                    <button class="modal__btn" type="submit" name="submit">ОТПРАВИТЬ</button>
+                </form>
+            </div>
+            <img class="modal__img" src="images/form-popup-img.jpg" alt="">
+            <button class="modal__close-btn uk-modal-close" type="button">
+                <img src="images/close-btn.svg" alt="">
+            </button>
+        </div>
+    </div>
 
     <section class="top">
         <div class="top__slider uk-position-relative uk-visible-toggle" tabindex="-1"
