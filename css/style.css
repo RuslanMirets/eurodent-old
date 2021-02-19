@@ -461,12 +461,15 @@ body {
 }
 .video-popup {
     margin-top: 70px;
+    position: relative;
 }
 
 .video-popup-play {
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-40%, -50%);
     opacity: 0.9;
-    transform: translate(-300px, 150px);
     transition: all 0.3s;
 }
 .video-popup-play:hover {
@@ -586,18 +589,15 @@ body {
 }
 .reviews__slider-item a {
     outline: none;
+    position: relative;
 }
-.reviews-popup.popup-youtube::before {
-    content: url("../images/play-ico.svg");
+.reviews-popup-play{
     position: absolute;
-    transform: translate(250%, 140%);
-    z-index: 1000;
-    opacity: 0.9;
-    transition: all 0.3s;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
 }
-.reviews-popup.popup-youtube:hover::before {
-    opacity: 1;
-}
+
 .reviews__slider-info {
     height: 110px;
     background-color: #f9f9f9;
@@ -1003,15 +1003,21 @@ body {
         padding: 0 10px;
         max-width: 1242px;
     }
-}
-@media (max-width: 1750px) {
-    .top__slider-info {
-        width: 450px;
-        top: 25%;
-        transform: translateX(50%);
+    .uk-dotnav.slider-dotnav-top{
+        display: none;
     }
 }
 @media (max-width: 1520px) {
+    .slider__arrow{
+        display: none;
+    }
+    .top__slider-images{
+        display: none;
+    }
+    .top__slider-info{
+        margin: 0 auto;
+        height: 260px;
+    }
     .equipments__items {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -1341,6 +1347,9 @@ body {
         width: 375px;
     }
     .patients {
+        width: 375px;
+    }
+    .patients__slider{
         width: 375px;
     }
     .services {
