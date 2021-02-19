@@ -471,13 +471,15 @@ body {
     opacity: 1;
 }
 .appointment {
-    height: 240px;
+    height: 280px;
     background-color: #fff;
 }
 .appointment__inner {
-    background-color: #f3f7f6;
-    border-bottom-left-radius: 40%;
-    border-bottom-right-radius: 40%;
+    background-image: url('../images/appointment-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    padding-bottom: 50px;
 }
 .appointment__title {
     margin-top: 62px;
