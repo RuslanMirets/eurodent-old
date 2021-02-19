@@ -821,7 +821,7 @@ body {
     margin-left: 85px;
 }
 .advantages__righ-text {
-    padding-bottom: 57px;
+    padding-bottom: 40px;
     font-weight: 300;
     font-size: 17px;
     line-height: 20px;
@@ -911,7 +911,6 @@ body {
     line-height: 17px;
     position: relative;
     padding-left: 24px;
-    padding-bottom: 19px;
     transition: all 0.3s;
 }
 .footer__phone-link {
@@ -964,7 +963,6 @@ body {
     top: 0;
 }
 .footer__credit {
-    padding-bottom: 26px;
     font-size: 14px;
     line-height: 17px;
     width: 230px;
