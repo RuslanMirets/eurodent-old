@@ -119,11 +119,11 @@ body {
     top: 0;
 }
 .header__wrapper {
-    margin: 0 auto;
     border-top: 1px solid#EDEDED;
-    max-width: 1242px;
 }
 .header__bottom {
+    margin: 0 auto;
+    max-width: 1242px;
     height: 51px;
     display: flex;
     justify-content: space-between;
