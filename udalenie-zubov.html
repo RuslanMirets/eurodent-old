@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Удаление зубов</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/udalenie-zubov.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__top">
+            <a class="logo__link" href="#">
+                <img class="logo" src="images/logo.svg" alt="logo">
+                <img class="logo-mobile" src="images/logo-mobile.svg" alt="logo">
+            </a>
+            <p class="header__worktime">пн - пт 09:00 - 20:00, сб 09:00 - 18:00</p>
+            <p class="header__address">г. Краснодар, ул.Васнецова, 44</p>
+            <button class="menu__btn"></button>
+            <div class="header__phone">
+                <a class="header__phone-link" href="#">заказать звонок</a>
+                <a class="header__phone-number" href="tel:88612012250">8 (861) 201-22-50</a>
+            </div>
+        </div>
+        <div class="header__wrapper">
+            <div class="header__bottom">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__list-link" href="#">Главная</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#">Услуги стоматологии</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#">Врачи центра</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#">Цены на лечение</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#">фото наших работ</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#">О клинике</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#">Статьи</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a class="header__btn popup-form" href="#modal" uk-toggle>Запись на приём</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="modal" uk-modal>
+        <div class="modal__inner">
+            <div class="modal__content">
+                <h1 class="modal__title">Запишитесь на приём</h1>
+                <p class="modal__text">Заполните простую форму, и наш специалист <br>
+                    свяжется с вами в ближайшее время</p>
+                <form class="modal__form" id="modal-form">
+                    <div class="error-message" id="error-modal"></div>
+                    <div class="modal__inputs">
+                        <input class="modal__input name" type="text" placeholder="Ваше имя">
+                        <input class="modal__input phone" id="phone-modal" type="tel" placeholder="Ваш телефон">
+                    </div>
+                    <label class="label-checkbox" for="checkbox-modal">
+                        <input class="checkbox" id="checkbox-modal" name="checkbox-modal" type="checkbox">
+                        <span class="check-style"></span>
+                        Даю согласие на обработку персональных данных
+                    </label>
+                    <button class="modal__btn" type="submit" name="submit">ОТПРАВИТЬ</button>
+                </form>
+            </div>
+            <img class="modal__img" src="images/form-popup-img.jpg" alt="">
+            <button class="modal__close-btn uk-modal-close" type="button">
+                <img src="images/close-btn.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <section class="top">
+        
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__item">
+                    <img src="images/logo-footer.svg" alt="">
+                    <p class="footer__info">Центр современной стоматологии
+                        2019 © Все права защищены.
+                        Лицензия № ЛО-23-01-010014</p>
+                </div>
+                <div class="footer__item">
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Главная</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Услуги стоматологии</a>
+                            </li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Врачи центра</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Цены на лечение</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">фото наших работ</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">О клинике</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Статьи</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__item">
+                    <p class="footer__worktime">пн - пт 09:00 - 20:00, сб 09:00 - 18:00</p>
+                    <p class="footer__address">г. Краснодар, ул.Васнецова, 44</p>
+                    <p class="footer__instagram">@eurodentlux</p>
+                    <p class="footer__email"><a href="mailto:eurodent777@mail.ru">eurodent777@mail.ru</a></p>
+                    <a class="footer__phone" href="tel:88612012250">8 (861) 201-22-50</a><br><br>
+                    <a class="footer__phone-link" href="#">заказать звонок</a>
+                </div>
+                <div class="footer__item">
+                    <p class="footer__credit">Кредит под минимальный процент
+                        (от 1,5%)</p>
+                    <div class="footer__credit-images">
+                        <img src="images/bank-cart-1.svg" alt="">
+                        <img src="images/bank-cart-2.svg" alt="">
+                        <img src="images/bank-cart-3.svg" alt="">
+                        <img src="images/bank-cart-4.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.js"></script>
+    <script src="js/udalenie-zubov.js"></script>
+</body>
+
+</html>
