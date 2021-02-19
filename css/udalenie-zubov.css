@@ -290,8 +290,53 @@ body {
 .modal__close-btn:hover {
     background-color: #f39035;
 }
-
-
+.modal__form > .error-message{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: -40px;
+    margin-bottom: 10px;
+}
+.error-message {
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+}
+.top {
+    background-image: url("../images/udalenie-zubov/top-bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.top::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(23, 62, 48, 0.6);;
+}
+.top__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+}
+.top__title span {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+}
 
 .footer {
     height: 316px;
