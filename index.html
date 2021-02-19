@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/uikit.min.css">
-    <!-- <link rel="stylesheet" href="css/magnific-popup.css"> -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -47,32 +46,6 @@
             </div>
         </div>
     </header>
-
-    <!-- <form id="registration-form" class="form-popup mfp-hide">
-        <div class="form-popup__inner">
-            <div class="form-popup__info">
-                <h1 class="form-popup__title">Запишитесь на приём</h1>
-                <p class="form-popup__text">Заполните простую форму, и наш специалист
-                    свяжется с вами в ближайшее время</p>
-                <div class="from-popup__inputs">
-                    <input class="from-popup__input" type="text" placeholder="Ваше имя">
-                    <input class="from-popup__input phone" type="tel" placeholder="Ваш телефон">
-                    <label class="label-checkbox" for="checkbox-form-popup">
-                        <input class="checkbox" id="checkbox-form-popup" type="checkbox">
-                        <span class="check-style"></span>
-                        Даю согласие на обработку персональных данных
-                    </label>
-                    <button class="from-popup__btn" type="submit">ОТПРАВИТЬ</button>
-                </div>
-            </div>
-            <div class="form-popup-img">
-                <img src="images/form-popup-img.jpg" alt="">
-            </div>
-        </div>
-        <button class="mfp-close" type="button">
-            <img class="mfp-close" src="images/close-form-ico.svg" alt="">
-        </button>
-    </form> -->
 
     <section class="top">
         <div class="top__slider uk-position-relative uk-visible-toggle" tabindex="-1"
@@ -362,20 +335,23 @@
     </section>
 
     <section class="appointment">
-        <div class="container">
-            <h1 class="appointment__title">Запишитесь на приём</h1>
-            <form class="appointment__form">
-                <div class="appointment__inputs">
-                    <input class="appointment__input" type="text" placeholder="Ваше имя">
-                    <input class="appointment__input phone" type="tel" placeholder="Ваш телефон">
-                    <button class="appointment__btn" type="submit">ОТПРАВИТЬ</button>
-                </div>
-                <label class="label-checkbox" for="checkbox">
-                    <input class="checkbox" id="checkbox" type="checkbox">
-                    <span class="check-style"></span>
-                    Даю согласие на обработку персональных данных
-                </label>
-            </form>
+        <div class="appointment__inner">
+            <div class="container">
+                <h1 class="appointment__title">Запишитесь на приём</h1>
+                <form class="appointment__form" id="appointment__form">
+                    <div class="error-message" id="error"></div>
+                    <div class="appointment__inputs">
+                        <input class="appointment__input name" type="text" placeholder="Ваше имя">
+                        <input class="appointment__input phone" id="phone" type="tel" placeholder="Ваш телефон">
+                        <button class="appointment__btn" type="submit" name="submit">ОТПРАВИТЬ</button>
+                    </div>
+                    <label class="label-checkbox" for="checkbox">
+                        <input class="checkbox" id="checkbox" name="checkbox" type="checkbox">
+                        <span class="check-style"></span>
+                        Даю согласие на обработку персональных данных
+                    </label>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -808,14 +784,15 @@
     <section class="appointment-bottom">
         <div class="container">
             <h1 class="appointment-bottom__title">Запишитесь на приём</h1>
-            <form class="appointment__form">
+            <form class="appointment__form" id="appointment__form-bottom">
+                <div class="error-message" id="error-bottom"></div>
                 <div class="appointment__inputs">
-                    <input class="appointment__input" type="text" placeholder="Ваше имя">
-                    <input class="appointment__input phone" type="tel" placeholder="Ваш телефон">
-                    <button class="appointment__btn" type="submit">ОТПРАВИТЬ</button>
+                    <input class="appointment__input name" type="text" placeholder="Ваше имя">
+                    <input class="appointment__input phone" id="phone-bottom" type="tel" placeholder="Ваш телефон">
+                    <button class="appointment__btn" type="submit" name="submit">ОТПРАВИТЬ</button>
                 </div>
                 <label class="label-checkbox" for="checkbox-bottom">
-                    <input class="checkbox" id="checkbox-bottom" type="checkbox">
+                    <input class="checkbox" id="checkbox-bottom" name="checkbox" type="checkbox">
                     <span class="check-style"></span>
                     Даю согласие на обработку персональных данных
                 </label>
@@ -875,10 +852,9 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.js"></script>
-    <!-- <script src="js/jquery.magnific-popup.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script> -->
     <script src="js/main.js"></script>
 </body>
 

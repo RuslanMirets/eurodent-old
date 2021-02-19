@@ -163,6 +163,7 @@ body {
 }
 .header__btn:hover {
     background: #67bc9e;
+    color: #fff;
 }
 
 .form-popup {
@@ -471,6 +472,12 @@ body {
 }
 .appointment {
     height: 240px;
+    background-color: #fff;
+}
+.appointment__inner {
+    background-color: #f3f7f6;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
 }
 .appointment__title {
     margin-top: 62px;
@@ -478,6 +485,12 @@ body {
     font-size: 30px;
     line-height: 36px;
     text-align: center;
+}
+.error-message{
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
 }
 .appointment__inputs {
     display: flex;
