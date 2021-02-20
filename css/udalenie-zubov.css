@@ -791,7 +791,6 @@ body {
 .footer__credit-images img:nth-child(4) {
     transform: translateY(1px);
 }
-
 @media (max-width: 1130px) {
     .header__bottom {
         justify-content: center;
@@ -800,8 +799,26 @@ body {
         display: none;
     }
 }
+@media (max-width: 1080px) {
+    .how__inner {
+        justify-content: center;
+    }
+    .how__img {
+        display: none;
+    }
+}
 @media (max-width: 1050px) {
     .header__phone-link {
+        display: none;
+    }
+    .recommendation__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info__inner {
+        justify-content: center;
+    }
+    .info__img {
         display: none;
     }
 }
@@ -857,6 +874,30 @@ body {
         left: 0;
         top: 9px;
     }
+    .slider__arrow {
+        display: none;
+    }
+}
+@media (max-width: 900px) {
+    .footer {
+        height: 800px;
+    }
+    .footer__inner {
+        display: block;
+    }
+    .footer__item {
+        width: 270px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .footer__item:nth-child(1){
+        padding-top: 15px;
+    }
+}
+@media (max-width: 800px) {
+    .price__list-cost {
+        margin-right: 0;
+    }
 }
 @media (max-width: 710px) {
     .logo__img {
@@ -867,5 +908,38 @@ body {
     }
     .header__address {
         display: none;
+    }
+}
+@media (max-width: 650px) {
+    .info__text {
+        font-size: 16px;
+    }
+}
+@media (max-width: 650px) {
+    .dentists__content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .dentists__item:nth-child(1) {
+        margin-right: 0;
+    }
+    .dentists__item:nth-child(2) {
+        margin-left: 0;
+    }
+}
+@media (max-width: 400px) {
+    .reviews__btn {
+        padding: 20px 70px;
+    }
+    .how__btn {
+        padding: 20px 70px;
+    }
+    .whattodo__btn {
+        padding: 20px 70px;
+    }
+}
+@media (max-width: 370px) {
+    .price__list-name {
+        max-width: 140px;
     }
 }
