@@ -159,7 +159,7 @@ body {
     color: #ffffff;
     padding: 19px 40px;
     background-color: #f39035;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 .header__btn:hover {
     background-color: #67bc9e;
@@ -571,14 +571,128 @@ body {
     color: #fff;
     background-color: #f39035;
 }
+.price {
+    background-color: #fff;
+    padding-top: 21px;
+}
+.price__text {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    display: inline-block;
+}
+.price__btn {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    margin-left: 10px;
+    color: #67bc9e;
+    border-bottom: 1px dashed #67bc9e;
+    position: relative;
+    transition: all 0.3s;
+}
+.price__btn::after {
+    content: url("../images/udalenie-zubov/arrow-up.svg");
+    position: absolute;
+    right: -18px;
+    top: -2px;
+}
+.price__btn:hover {
+    color: #67bc9e;
+    border-bottom: 1px dashed transparent;
+}
+.price__list-item {
+    border-top: 1px solid #f3f7f6;
+}
+.price__list-container {
+    max-width: 1160px;
+    padding: 0 10px;
+    margin: 0 auto;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price__list-name {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+}
+.price__list-cost {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    margin-right: 44px;
+}
+.info__inner {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.info__content {
+    max-width: 628px;
+    padding-top: 35px;
+    position: relative;
+}
+.info__content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 68px;
+    height: 5px;
+    background-color: #67bc9e;
+}
+.info__text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+}
+.dentists__title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.dentists__content {
+    display: flex;
+    justify-content: center;
+}
+.dentists__item {
+    max-width: 263px;
+    margin-bottom: 50px;
+    transition: all .3s;
+}
+.dentists__item:hover{
+    transform: translateY(20px);
+}
+.dentists__item:nth-child(1) {
+    margin-right: 15px;
+}
+.dentists__item:nth-child(2) {
+    margin-left: 15px;
+}
+.dentists__name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+.dentists__description {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    margin-top: -9px;
+}
+
 .footer {
     height: 316px;
     background-color: #67bc9e;
     color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 .footer__inner {
     display: flex;
