@@ -74,6 +74,12 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.logo__mobile {
+    display: none;
+}
+.menu__btn {
+    display: none;
+}
 .header__worktime {
     font-weight: 400;
     font-size: 12px;
@@ -159,7 +165,7 @@ body {
     color: #ffffff;
     padding: 19px 40px;
     background-color: #f39035;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 .header__btn:hover {
     background-color: #67bc9e;
@@ -195,7 +201,7 @@ body {
     text-align: center;
     padding-bottom: 38px;
 }
-.modal__form > .error-message{
+.modal__form > .error-message {
     width: 300px;
     margin: 0 auto;
     margin-top: -40px;
@@ -244,10 +250,10 @@ body {
     cursor: pointer;
     border: none;
 }
-.modal__btn:hover{
+.modal__btn:hover {
     background-color: #f39035;
 }
-.modal__close-btn{
+.modal__close-btn {
     position: absolute;
     top: 0;
     right: 0;
@@ -256,9 +262,9 @@ body {
     outline: none;
     border: none;
     cursor: pointer;
-    transition: all .3s;
+    transition: all 0.3s;
 }
-.modal__close-btn:hover{
+.modal__close-btn:hover {
     background-color: #f39035;
 }
 .top__slider {
@@ -591,7 +597,7 @@ body {
     outline: none;
     position: relative;
 }
-.reviews-popup-play{
+.reviews-popup-play {
     position: absolute;
     top: -50%;
     left: 50%;
@@ -987,34 +993,18 @@ body {
 }
 
 @media (max-width: 1800px) {
-    .header__top {
-        padding: 0 10px;
-    }
-    .header__worktime {
-        display: none;
-    }
-    .header__btn {
-        margin-right: 10px;
-    }
-    .menu__item + .menu__item {
-        margin-left: 20px;
-    }
-    .menu__list {
-        padding: 0 10px;
-        max-width: 1242px;
-    }
-    .uk-dotnav.slider-dotnav-top{
+    .uk-dotnav.slider-dotnav-top {
         display: none;
     }
 }
 @media (max-width: 1520px) {
-    .slider__arrow{
+    .slider__arrow {
         display: none;
     }
-    .top__slider-images{
+    .top__slider-images {
         display: none;
     }
-    .top__slider-info{
+    .top__slider-info {
         margin: 0 auto;
         height: 260px;
     }
@@ -1041,6 +1031,14 @@ body {
         grid-template-columns: 1fr 1fr;
     }
 }
+@media (max-width: 1130px) {
+    .header__bottom {
+        justify-content: center;
+    }
+    .header__btn {
+        display: none;
+    }
+}
 @media (max-width: 1120px) {
     .appointment__input.phone {
         margin-left: 10px;
@@ -1053,24 +1051,10 @@ body {
         display: block;
         height: auto;
     }
-    /* .advantages__left {
-        width: 390px;
-        margin: 0 auto;
-    }
-    .advantages__right {
-        width: 680px;
-        margin: 0 auto;
-    } */
 }
 @media (max-width: 1065px) {
-    .header__btn {
-        display: none;
-    }
     .popup-form {
         display: none;
-    }
-    .menu {
-        margin: 0 auto;
     }
     .top__slider-btn {
         display: none;
@@ -1087,10 +1071,62 @@ body {
         margin-top: 20px;
     }
 }
+@media (max-width: 1050px) {
+    .header__phone-link {
+        display: none;
+    }
+}
 @media (max-width: 960px) {
-    .services__wrapper {
-        padding-left: 80px;
-        grid-template-columns: 50% 50%;
+    .header__worktime {
+        display: none;
+    }
+    .header__bottom {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transform: translateX(-960px);
+        transition: all 0.1s;
+        z-index: 10;
+    }
+    .header__bottom.header__bottom--active {
+        transform: translateX(0);
+    }
+    .menu__list {
+        display: block;
+        background-color: #f3f7f6;
+        text-align: center;
+        transition: all 0.1s;
+    }
+    .menu__list-item + .menu__list-item {
+        margin-left: 0;
+    }
+    .menu__list-link {
+        padding: 15px 0;
+        display: block;
+        border-bottom: 1px solid #ededed;
+    }
+    .menu__btn {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 24px;
+        border: none;
+        outline: none;
+        border-top: 2px solid #67bc9e;
+        border-bottom: 2px solid #67bc9e;
+        background-color: transparent;
+        position: relative;
+        order: 1;
+    }
+    .menu__btn::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: #67bc9e;
+        left: 0;
+        top: 9px;
     }
 }
 @media (max-width: 900px) {
@@ -1107,66 +1143,6 @@ body {
     }
 }
 @media (max-width: 870px) {
-    .header__address {
-        display: none;
-    }
-    .header__phone-link {
-        display: none;
-    }
-    .menu__list {
-        display: block;
-        position: absolute;
-        top: 55px;
-        left: 0;
-        right: 0;
-        background-color: #f3f7f6;
-        text-align: center;
-        padding: 15px 0;
-        transform: translateX(-900px);
-        transition: all 0.2s;
-        z-index: 1000;
-    }
-    .menu__list.menu__list--active {
-        transform: translateX(0);
-    }
-    .menu__list-link {
-        font-size: 14px;
-        padding: 15px 0;
-        display: block;
-        border-bottom: 1px solid #000;
-    }
-    .menu__item + .menu__item {
-        margin-left: 0px;
-    }
-    .menu__btn {
-        display: block;
-        width: 34px;
-        height: 25px;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        border-top: 2px solid #67bc9e;
-        border-bottom: 2px solid #67bc9e;
-        background-color: transparent;
-        position: relative;
-        order: 1;
-    }
-    .menu__btn::before {
-        content: "";
-        position: absolute;
-        width: 34px;
-        height: 2px;
-        background-color: #67bc9e;
-        left: 0;
-        top: 10px;
-    }
-    .logo {
-        display: none;
-    }
-    .logo-mobile {
-        display: block;
-        width: 60px;
-    }
     .top__slider-item img {
         display: none;
     }
@@ -1222,6 +1198,7 @@ body {
         margin: 0 auto;
     }
 }
+
 @media (max-width: 720px) {
     .services__wrapper {
         width: 320px;
@@ -1230,6 +1207,18 @@ body {
         grid-template-columns: 100%;
     }
 }
+@media (max-width: 710px) {
+    .logo__img {
+        display: none;
+    }
+    .logo__mobile {
+        display: block;
+    }
+    .header__address {
+        display: none;
+    }
+}
+
 @media (max-width: 700px) {
     .advantages__left {
         transform: scale(0.8);
@@ -1280,9 +1269,6 @@ body {
     }
 }
 @media (max-width: 500px) {
-    .header__phone-link {
-        display: none;
-    }
     .top__slider-info {
         transform: scale(0.8);
     }
@@ -1313,9 +1299,6 @@ body {
     }
 }
 @media (max-width: 400px) {
-    .header__phone-number {
-        font-size: 16px;
-    }
     .advantages {
         height: 1300px;
     }
@@ -1337,19 +1320,13 @@ body {
     }
 }
 @media (max-width: 375px) {
-    .header {
-        width: 375px;
-    }
-    .menu__list {
-        width: 375px;
-    }
     .top__slider {
         width: 375px;
     }
     .patients {
         width: 375px;
     }
-    .patients__slider{
+    .patients__slider {
         width: 375px;
     }
     .services {

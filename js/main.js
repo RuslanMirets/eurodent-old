@@ -5,9 +5,8 @@ $(function () {
     });
 
     $('.menu__btn').on('click', function () {
-        $('.menu__list').toggleClass('menu__list--active')
+        $('.header__bottom').toggleClass('header__bottom--active')
     });
-
 
     const phone = document.getElementById('phone')
     const checkbox = document.getElementById('checkbox')

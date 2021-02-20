@@ -74,6 +74,12 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.logo__mobile {
+    display: none;
+}
+.menu__btn {
+    display: none;
+}
 .header__worktime {
     font-weight: 400;
     font-size: 12px;
@@ -582,6 +588,7 @@ body {
     display: inline-block;
 }
 .price__btn {
+    padding: 3px 0;
     display: inline-block;
     font-weight: 300;
     font-size: 17px;
@@ -596,7 +603,7 @@ body {
     content: url("../images/udalenie-zubov/arrow-up.svg");
     position: absolute;
     right: -18px;
-    top: -2px;
+    top: 0;
 }
 .price__btn:hover {
     color: #67bc9e;
@@ -664,9 +671,9 @@ body {
 .dentists__item {
     max-width: 263px;
     margin-bottom: 50px;
-    transition: all .3s;
+    transition: all 0.3s;
 }
-.dentists__item:hover{
+.dentists__item:hover {
     transform: translateY(20px);
 }
 .dentists__item:nth-child(1) {
@@ -783,4 +790,82 @@ body {
 }
 .footer__credit-images img:nth-child(4) {
     transform: translateY(1px);
+}
+
+@media (max-width: 1130px) {
+    .header__bottom {
+        justify-content: center;
+    }
+    .header__btn {
+        display: none;
+    }
+}
+@media (max-width: 1050px) {
+    .header__phone-link {
+        display: none;
+    }
+}
+@media (max-width: 960px) {
+    .header__worktime {
+        display: none;
+    }
+    .header__bottom {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transform: translateX(-960px);
+        transition: all 0.1s;
+        z-index: 10;
+    }
+    .header__bottom.header__bottom--active {
+        transform: translateX(0);
+    }
+    .menu__list {
+        display: block;
+        background-color: #f3f7f6;
+        text-align: center;
+        transition: all 0.1s;
+    }
+    .menu__list-item + .menu__list-item {
+        margin-left: 0;
+    }
+    .menu__list-link {
+        padding: 15px 0;
+        display: block;
+        border-bottom: 1px solid #ededed;
+    }
+    .menu__btn {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 24px;
+        border: none;
+        outline: none;
+        border-top: 2px solid #67bc9e;
+        border-bottom: 2px solid #67bc9e;
+        background-color: transparent;
+        position: relative;
+        order: 1;
+    }
+    .menu__btn::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: #67bc9e;
+        left: 0;
+        top: 9px;
+    }
+}
+@media (max-width: 710px) {
+    .logo__img {
+        display: none;
+    }
+    .logo__mobile {
+        display: block;
+    }
+    .header__address {
+        display: none;
+    }
 }
