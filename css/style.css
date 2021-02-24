@@ -975,11 +975,14 @@ body {
     top: 2px;
     left: 0;
 }
-.footer__instagram {
+.footer__instagram::before {
     content: url("../images/footer-instagram-ico.svg");
     position: absolute;
     top: 2px;
     left: 0;
+}
+.footer__instagram:hover {
+    color: #beecdc;
 }
 .footer__email::before {
     content: url("../images/footer-mail-ico.svg");
