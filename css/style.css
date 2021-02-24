@@ -756,12 +756,12 @@ body {
 }
 .doctor__img {
     padding-top: 34px;
-    background-image: url('../images/doctor-line-img.png');
+    background-image: url("../images/doctor-line-img.png");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
 }
-.professionals {
+/* .professionals {
     height: 706px;
 }
 .professionals__title {
@@ -794,7 +794,48 @@ body {
 .professionals-slider-arrow-right {
     right: -140px;
     top: 175px;
+} */
+
+.professionals {
+    padding-top: 50px;
 }
+.professionals__title {
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+.professionals__slider {
+    margin-bottom: 100px;
+}
+.professionals__slider-item {
+    padding-bottom: 20px;
+    transition: transform .4s;
+}
+.professionals__slider-item:hover {
+    transform: translateY(20px);
+}
+.professionals__slider-img {
+    margin-bottom: 23px;
+}
+.professionals__slider-name {
+    margin-bottom: 11px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+.professionals__slider-info {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+}
+.slider__arrow-professionals {
+    margin-top: -60px;
+}
+
 .advantages {
     background-color: #67bc9e;
     max-width: 1920px;
