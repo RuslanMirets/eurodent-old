@@ -685,6 +685,7 @@ body {
     margin-bottom: 52px;
 }
 .equipments__items {
+    margin-bottom: 50px;
     background-color: #f3f7f6;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -700,7 +701,7 @@ body {
     width: 100%;
     height: auto;
 }
-.equipments__item-info{
+.equipments__item-info {
     height: 62px;
     display: flex;
     align-items: center;
@@ -711,58 +712,54 @@ body {
     line-height: 18px;
     text-align: center;
 }
-.doctor {
-    width: 100%;
-}
+
 .doctor__inner {
-    margin-top: 50px;
-    background-color: #fff;
     display: flex;
     justify-content: space-between;
-    height: 608px;
+    background-color: #fff;
 }
 .doctor__content {
-    margin-left: 300px;
     margin-top: 118px;
+    max-width: 555px;
+    margin-left: 380px;
 }
 .doctor__title {
+    margin-bottom: 26px;
+    padding-left: 98px;
+    position: relative;
     font-weight: 300;
     font-size: 15px;
     line-height: 36px;
     text-transform: uppercase;
     color: #67bc9e;
-    padding-bottom: 26px;
-    position: relative;
-    padding-left: 100px;
 }
 .doctor__title::before {
     content: "";
     position: absolute;
-    left: 0;
-    top: 15px;
     width: 68px;
-    border: 2px solid #67bc9e;
+    height: 5px;
+    background-color: #67bc9e;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
 .doctor__text {
+    margin-bottom: 30px;
+    font-weight: 300;
     font-size: 24px;
     line-height: 36px;
-    padding-bottom: 30px;
-    width: 555px;
 }
 .doctor__name {
     font-size: 18px;
     line-height: 22px;
     font-weight: bold;
 }
-.doctor__images {
-    right: 0;
-    position: absolute;
-}
 .doctor__img {
-    transform: translateY(70px);
-}
-.doctor__line {
-    transform: translate(544px, -31px);
+    padding-top: 34px;
+    background-image: url('../images/doctor-line-img.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
 }
 .professionals {
     height: 706px;
