@@ -267,7 +267,7 @@ body {
 .modal__close-btn:hover {
     background-color: #f39035;
 }
-.top__slider {
+/* .top__slider {
     background-color: #fff;
 }
 .top__slider-item {
@@ -392,7 +392,132 @@ body {
     line-height: 29px;
     text-transform: uppercase;
     color: #f39035;
+} */
+.top {
+    background-color: #fff;
 }
+.top__slider-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 350px;
+}
+.top__title {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.top__subtitle {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 19px;
+}
+.top__subtitle > span {
+    font-weight: 900;
+    font-size: 41px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #f39035;
+}
+.top__text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 59px;
+}
+.top__title-2 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.top__subtitle-2 {
+    font-size: 22px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #f39035;
+    padding-bottom: 19px;
+}
+.top__text-2 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 59px;
+}
+.top__title-3 {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.top__subtitle-3 {
+    font-weight: 900;
+    font-size: 41px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #f39035;
+    padding-bottom: 19px;
+}
+.top__text-3 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 59px;
+}
+.top__title-4 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    padding-bottom: 77px;
+}
+.top__title-4 span {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #f39035;
+}
+.top__btn {
+    padding: 19px 64px;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    border-radius: 60px;
+    transition: all 0.3s;
+}
+.top__btn:hover {
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: #f39035;
+}
+
+.slider__arrow {
+    padding: 13px;
+    background-color: #67bc9e;
+}
+.uk-dotnav.slider-dotnav-top {
+    /* transform: translate(-550px, -50px); */
+    margin-left: 350px;
+    margin-bottom: 50px;
+}
+.uk-dotnav > * > * {
+    background-color: #67bc9e;
+    border: none;
+}
+.uk-dotnav > * > *:hover {
+    background-color: #67bc9e;
+}
+.uk-dotnav > .uk-active > * {
+    width: 21px;
+    background: #67bc9e;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
 .patients__title {
     margin-top: 50px;
     padding-bottom: 35px;
@@ -1141,7 +1266,7 @@ body {
         margin: 0 auto;
         margin-top: 40px;
     }
-    .footer__item:nth-child(1){
+    .footer__item:nth-child(1) {
         padding-top: 15px;
     }
 }
