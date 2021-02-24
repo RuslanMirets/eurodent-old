@@ -667,86 +667,49 @@ body {
 .interior__slider-item a:hover:after {
     opacity: 1;
 }
-/* .interior {
-    height: 570px;
-}
-.interior__title {
-    width: 460px;
-    padding-top: 70px;
-    padding-bottom: 32px;
-}
-.interior__text {
-    font-size: 20px;
-    line-height: 24px;
-    padding-bottom: 51px;
-}
-.interior-slider-arrow {
-    margin-top: 150px;
-}
-.slider-dotnav-interior {
-    left: 1100px;
-    top: 200px;
-}
-.interior__slider-item a {
-    display: block;
-    position: relative;
-    outline: none;
-    width: 360px;
-}
-.interior__slider-item a:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.25);
-    opacity: 0;
-    transition: all 0.6s;
-}
-.interior__slider-item a:hover:after {
-    opacity: 1;
-} */
 
 .equipments {
+    padding-top: 70px;
     background-color: #fff;
 }
 .equipments__title {
-    padding: 70px 0 40px;
-    width: 460px;
+    max-width: 460px;
+    margin-top: 40px;
+    font-size: 30px;
+    line-height: 36px;
 }
 .equipments__text {
+    font-weight: 300;
     font-size: 20px;
     line-height: 24px;
-    padding-bottom: 52px;
-}
-.equipments__items-wrapper {
-    background-color: #e5e5e5;
+    margin-bottom: 52px;
 }
 .equipments__items {
+    background-color: #f3f7f6;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    background-color: #fff;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3px;
 }
 .equipments__item {
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.equipments__item img {
-    width: 378px;
-    height: 282px;
+.equipments__item-img {
+    width: 100%;
+    height: auto;
 }
-.equipments__item-bottom {
-    width: 380px;
+.equipments__item-info{
     height: 62px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    top: 0;
 }
 .equipments__item-name {
+    font-weight: 300;
     font-size: 15px;
     line-height: 18px;
+    text-align: center;
 }
 .doctor {
     width: 100%;
