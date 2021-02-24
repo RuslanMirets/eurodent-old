@@ -804,10 +804,40 @@ body {
 
 .advantages {
     background-color: #67bc9e;
+    position: relative;
+    z-index: 1;
+}
+.advantages__block-1 {
+    position: absolute;
+    width: 750px;
+    height: 125px;
+    bottom: 117px;
+    left: 0;
+    background: #6cc0a2;
+    z-index: -1;
+}
+.advantages__block-2 {
+    position: absolute;
+    width: 1500px;
+    height: 157px;
+    top: 0;
+    right: 0;
+    background: #6cc0a2;
+    z-index: -1;
+}
+.advantages__block-3 {
+    position: absolute;
+    width: 818px;
+    height: 189px;
+    bottom: 0;
+    right: 0;
+    background: #6cc0a2;
+    z-index: -1;
 }
 .advantages__inner {
     display: flex;
     justify-content: space-between;
+    z-index: 1000;
 }
 .advantages__left {
     padding-right: 67px;
