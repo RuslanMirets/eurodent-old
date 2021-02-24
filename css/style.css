@@ -447,16 +447,16 @@ body {
     margin-top: 158px;
 }
 .video__title {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 30px;
     line-height: 36px;
-
     padding-bottom: 34px;
 }
 .video__title span {
     color: #67bc9e;
 }
 .video__text {
+    font-weight: 300;
     font-size: 20px;
     line-height: 24px;
 }
@@ -468,7 +468,7 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-40%, -50%);
+    transform: translate(-50%, -50%);
     opacity: 0.9;
     transition: all 0.3s;
 }
@@ -479,7 +479,7 @@ body {
     background-color: #fff;
 }
 .appointment__inner {
-    background-image: url('../images/appointment-bg.svg');
+    background-image: url("../images/appointment-bg.svg");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
@@ -573,48 +573,50 @@ body {
 
 .reviews {
     background-color: #fff;
-    height: 550px;
+    padding-top: 50px;
+    padding-bottom: 82px;
 }
 .reviews__title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
     text-align: center;
-    padding: 50px 49px;
+    margin-bottom: 49px;
 }
-.reviews__slider:nth-child(1) {
-    margin-left: 15px;
+.reviews__slider-item {
+    background-color: #f9f9f9;
 }
-.reviews__slider-img {
-    width: 360px;
-}
-.reviews__slider-item a {
-    outline: none;
+.reviews__popup {
     position: relative;
 }
-.reviews-popup-play {
+.reviews__slider-ico {
     position: absolute;
-    top: -50%;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+    transition: all 0.3s;
 }
-
-.reviews__slider-info {
-    height: 110px;
-    background-color: #f9f9f9;
-    width: 360px;
+.reviews__slider-ico:hover {
+    opacity: 1;
+}
+.reviews__slider-content {
+    padding: 26px 19px 31px;
 }
 .reviews__slider-name {
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    padding-top: 26px;
-    padding-left: 19px;
-    padding-bottom: 13px;
+    margin-bottom: 13px;
 }
-.reviews__slider-info-wrapper {
+.reviews__slider-info {
     display: flex;
     justify-content: space-between;
-    margin-left: 19px;
-    margin-right: 19px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
 }
+
 .interior {
     height: 570px;
 }
