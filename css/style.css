@@ -1087,6 +1087,17 @@ body {
     .patients__list > * {
         width: 33%;
     }
+    .appointment__inputs {
+        flex-direction: column;
+        align-items: center;
+    }
+    .name,
+    .phone {
+        margin-bottom: 10px;
+    }
+    .appointment__btn {
+        height: 53px;
+    }
 }
 @media (max-width: 1050px) {
     .header__phone-link {
@@ -1212,9 +1223,9 @@ body {
         max-width: 320px;
     }
     .services__wrapper {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .services__item-column:nth-child(4) {
         margin-top: -20px;
@@ -1237,10 +1248,33 @@ body {
     .patients__list > * {
         width: 100%;
     }
+
+    .appointment__title {
+        margin-top: 20px;
+        padding-bottom: 20px;
+        font-size: 26px;
+    }
 }
 @media (max-width: 500px) {
     .top__content {
         transform: scale(0.9);
+    }
+}
+@media (max-width: 440px) {
+    .appointment__input {
+        padding: 14px 20px;
+        max-width: 320px;
+    }
+    .appointment__btn {
+        height: 48px;
+        max-width: 320px;
+    }
+    .label-checkbox {
+       text-align: center;
+       max-width: 320px;
+    }
+    .check-style {
+        margin-left: -325px;
     }
 }
 @media (max-width: 400px) {
@@ -1259,5 +1293,10 @@ body {
     }
     .video-popup-play {
         width: 14%;
+    }
+}
+@media (max-width: 332px){
+    .check-style {
+        margin-left: -250px;
     }
 }
