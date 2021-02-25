@@ -396,6 +396,10 @@ body {
     line-height: 36px;
     text-align: center;
 }
+.patients__list > * {
+    display: flex;
+    justify-content: center;
+}
 
 .services {
     margin-top: 49px;
@@ -1077,6 +1081,11 @@ body {
         display: none;
     }
 }
+@media (max-width: 1100px) {
+    .patients__list > * {
+        width: 33%;
+    }
+}
 @media (max-width: 1050px) {
     .header__phone-link {
         display: none;
@@ -1136,8 +1145,20 @@ body {
     }
 }
 @media (max-width: 900px) {
-    .slider__arrow--top {
+    .slider__arrow {
         display: none;
+    }
+    .top{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 750px) {
+    .patients__title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .patients__list > * {
+        width: 50%;
     }
 }
 @media (max-width: 710px) {
@@ -1149,6 +1170,15 @@ body {
     }
     .header__address {
         display: none;
+    }
+}
+@media (max-width: 540px) {
+    .patients__title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .patients__list > * {
+        width: 100%;
     }
 }
 @media (max-width: 500px) {
