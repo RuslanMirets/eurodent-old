@@ -641,6 +641,10 @@ body {
 .interior__slider {
     margin-bottom: 70px;
 }
+.interior__list > * {
+    display: flex;
+    justify-content: center;
+}
 .slider__arrow-left--interior {
     margin-left: 300px;
     margin-top: 100px;
@@ -1057,6 +1061,15 @@ body {
         margin-left: 250px;
     }
 }
+@media (max-width: 1500px) {
+    .interior__list > * {
+        width: 33%;
+    }
+    .slider__arrow-left--interior,
+    .slider__arrow-right--interior {
+        display: none;
+    }
+}
 @media (max-width: 1430px) {
     .top__slider-item {
         padding-left: 180px;
@@ -1088,6 +1101,15 @@ body {
     }
     .reviews__list > * {
         width: 50%;
+    }
+    .interior {
+        padding-top: 20px;
+    }
+    .interior__list > * {
+        width: 50%;
+    }
+    .slider-dotnav-interior {
+        display: none;
     }
 }
 @media (max-width: 1100px) {
@@ -1209,6 +1231,9 @@ body {
     .patients__list > * {
         width: 50%;
     }
+    .reviews {
+        padding-bottom: 30px;
+    }
     .reviews__title {
         font-size: 26px;
         margin-bottom: 20px;
@@ -1218,6 +1243,15 @@ body {
     }
     .reviews__slider-ico {
         width: 14%;
+    }
+}
+@media (max-width: 730px) {
+    .interior__title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .interior__list > * {
+        width: 100%;
     }
 }
 @media (max-width: 710px) {
@@ -1292,6 +1326,17 @@ body {
     }
     .check-style {
         margin-left: -325px;
+    }
+    .interior__title {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+    .interior__text {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .interior__list > *{
+        transform: scale(.8);
     }
 }
 @media (max-width: 400px) {
