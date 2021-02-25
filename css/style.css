@@ -443,7 +443,7 @@ body {
     justify-content: space-between;
 }
 .video__info {
-    width: 460px;
+    max-width: 460px;
     margin-top: 158px;
 }
 .video__title {
@@ -462,6 +462,8 @@ body {
 }
 .video-popup {
     margin-top: 70px;
+}
+.video-popup-link {
     position: relative;
 }
 .video-popup-play {
@@ -1103,6 +1105,22 @@ body {
     .services__item-column:nth-child(4) {
         margin-top: -110px;
     }
+    .video_wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .video__info {
+        margin-top: 30px;
+        max-width: 900px;
+        text-align: center;
+    }
+    .video__title {
+        padding-bottom: 0px;
+    }
+    .video-popup {
+        margin-top: 10px;
+    }
 }
 @media (max-width: 960px) {
     .header__worktime {
@@ -1194,11 +1212,21 @@ body {
         max-width: 320px;
     }
     .services__wrapper {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 0 30px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
     }
     .services__item-column:nth-child(4) {
         margin-top: -20px;
+    }
+    .video__info {
+        margin-top: 20px;
+    }
+    .video__title {
+        font-size: 26px;
+    }
+    .video__text {
+        font-size: 18px;
     }
 }
 @media (max-width: 540px) {
@@ -1223,416 +1251,13 @@ body {
     .top__content {
         transform: scale(0.8);
     }
-}
-/* @media (max-width: 1900px) {
-    .equipments__items {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    .video__title {
+        font-size: 22px;
+    }
+    .video__text {
+        font-size: 14px;
+    }
+    .video-popup-play {
+        width: 14%;
     }
 }
-
-@media (max-width: 1800px) {
-    .uk-dotnav.slider-dotnav-top {
-        display: none;
-    }
-}
-@media (max-width: 1520px) {
-    .slider__arrow {
-        display: none;
-    }
-    .top__slider-images {
-        display: none;
-    }
-    .top__slider-info {
-        margin: 0 auto;
-        height: 260px;
-    }
-    .equipments__items {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-@media (max-width: 1350px) {
-    .top__slider-info {
-        width: 450px;
-        top: 15%;
-        transform: translateX(30%);
-    }
-    .doctor__images {
-        display: none;
-    }
-    .doctor__content {
-        margin: 0 auto;
-        margin-top: 20px;
-    }
-}
-@media (max-width: 1150px) {
-    .equipments__items {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-@media (max-width: 1130px) {
-    .header__bottom {
-        justify-content: center;
-    }
-    .header__btn {
-        display: none;
-    }
-}
-@media (max-width: 1120px) {
-    .appointment__input.phone {
-        margin-left: 10px;
-    }
-    .appointment__btn {
-        margin-left: 10px;
-    }
-
-    .advantages__inner {
-        display: block;
-        height: auto;
-    }
-}
-@media (max-width: 1065px) {
-    .popup-form {
-        display: none;
-    }
-    .top__slider-btn {
-        display: none;
-    }
-    .video_wrapper {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .video__info {
-        margin-top: 40px;
-    }
-    .video-popup {
-        margin-top: 20px;
-    }
-}
-@media (max-width: 1050px) {
-    .header__phone-link {
-        display: none;
-    }
-}
-@media (max-width: 960px) {
-    .header__worktime {
-        display: none;
-    }
-    .header__bottom {
-        display: block;
-        position: absolute;
-        left: 0;
-        right: 0;
-        transform: translateX(-960px);
-        transition: all 0.1s;
-        z-index: 10;
-    }
-    .header__bottom.header__bottom--active {
-        transform: translateX(0);
-    }
-    .menu__list {
-        display: block;
-        background-color: #f3f7f6;
-        text-align: center;
-        transition: all 0.1s;
-    }
-    .menu__list-item + .menu__list-item {
-        margin-left: 0;
-    }
-    .menu__list-link {
-        padding: 15px 0;
-        display: block;
-        border-bottom: 1px solid #ededed;
-    }
-    .menu__btn {
-        display: block;
-        cursor: pointer;
-        width: 30px;
-        height: 24px;
-        border: none;
-        outline: none;
-        border-top: 2px solid #67bc9e;
-        border-bottom: 2px solid #67bc9e;
-        background-color: transparent;
-        position: relative;
-        order: 1;
-    }
-    .menu__btn::before {
-        content: "";
-        position: absolute;
-        width: 30px;
-        height: 2px;
-        background-color: #67bc9e;
-        left: 0;
-        top: 9px;
-    }
-}
-@media (max-width: 900px) {
-    .footer {
-        height: 800px;
-    }
-    .footer__inner {
-        display: block;
-    }
-    .footer__item {
-        width: 270px;
-        margin: 0 auto;
-        margin-top: 40px;
-    }
-    .footer__item:nth-child(1) {
-        padding-top: 15px;
-    }
-}
-@media (max-width: 870px) {
-    .top__slider-item img {
-        display: none;
-    }
-    .top__slider-info {
-        position: relative;
-    }
-}
-@media (max-width: 800px) {
-    .appointment {
-        min-height: 400px;
-    }
-    .appointment__form {
-        height: 400px;
-    }
-    .appointment__inputs {
-        flex-direction: column;
-        align-items: center;
-    }
-    .appointment__input.phone {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-    .appointment__btn {
-        padding: 20px;
-        margin-left: 0;
-        margin-top: 10px;
-    }
-    .label-checkbox {
-        margin-left: 50px;
-    }
-    .appointment-bottom {
-        height: 500px;
-    }
-}
-@media (max-width: 770px) {
-    .equipments__title {
-        width: 300px;
-    }
-    .equipments__items {
-        grid-template-columns: 1fr;
-        margin: 0 auto;
-    }
-}
-@media (max-width: 750px) {
-    .reviews__slider {
-        width: 360px;
-        margin: 0 auto;
-    }
-    .interior__title {
-        max-width: 300px;
-    }
-    .interior__slider-item a {
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 720px) {
-    .services__wrapper {
-        width: 320px;
-        margin: 0 auto;
-        padding-left: 10px;
-        grid-template-columns: 100%;
-    }
-}
-@media (max-width: 710px) {
-    .logo__img {
-        display: none;
-    }
-    .logo__mobile {
-        display: block;
-    }
-    .header__address {
-        display: none;
-    }
-}
-
-@media (max-width: 700px) {
-    .advantages__left {
-        transform: scale(0.8);
-    }
-    .advantages__right {
-        display: block;
-    }
-    .advantages__right-items {
-        display: none;
-    }
-    .advantages__righ-info {
-        margin-left: 10px;
-    }
-}
-@media (max-width: 600px) {
-    .top__slider-info {
-        width: 300px;
-        height: 150px;
-    }
-    .video_wrapper {
-        transform: scale(0.8);
-    }
-    .video__info {
-        margin-top: 5px;
-    }
-    .video-popup {
-        margin-top: 10px;
-    }
-    .appointment__title {
-        margin-top: 0;
-    }
-    .doctor__text {
-        text-align: center;
-        width: auto;
-    }
-    .doctor__name {
-        text-align: center;
-    }
-}
-@media (max-width: 560px) {
-    .professionals__slider-item img {
-        margin: 0 auto;
-    }
-}
-@media (max-width: 540px) {
-    .patients__slider-item img {
-        margin: 0 auto;
-    }
-}
-@media (max-width: 500px) {
-    .top__slider-info {
-        transform: scale(0.8);
-    }
-}
-@media (max-width: 470px) {
-    .video_wrapper {
-        transform: scale(0.6);
-    }
-    .video__info {
-        margin-top: -100px;
-    }
-    .video-popup {
-        margin-top: 10px;
-    }
-    .appointment__title {
-        margin-top: -30px;
-    }
-}
-@media (max-width: 450px) {
-    .advantages__title {
-        width: auto;
-    }
-    .advantages__righ-text {
-        width: auto;
-    }
-    .advantages {
-        height: 1200px;
-    }
-}
-@media (max-width: 400px) {
-    .advantages {
-        height: 1300px;
-    }
-}
-@media (max-width: 380px) {
-    .services {
-        width: 380px;
-    }
-    .equipments {
-        width: 380px;
-    }
-    .equipments__item {
-        transform: scale(0.7);
-        margin-left: -40px;
-        margin-top: -60px;
-    }
-    .doctor__text {
-        transform: scale(0.6);
-    }
-}
-@media (max-width: 375px) {
-    .top__slider {
-        width: 375px;
-    }
-    .patients {
-        width: 375px;
-    }
-    .patients__slider {
-        width: 375px;
-    }
-    .services {
-        max-width: 375px;
-    }
-    .services__item {
-        width: 320px;
-    }
-    .video {
-        width: 375px;
-    }
-    .appointment {
-        width: 375px;
-        min-height: 340px;
-    }
-    .appointment__title {
-        margin-top: -30px;
-        padding-bottom: 0;
-    }
-    .appointment__form {
-        transform: scale(0.8);
-    }
-    .reviews {
-        width: 375px;
-    }
-    .reviews__title {
-        text-align: center;
-        padding: 11px 49px;
-    }
-    .reviews__slider {
-        width: 375px;
-        margin-left: -30px;
-        transform: scale(0.8);
-    }
-    .interior {
-        width: 375px;
-    }
-    .equipments {
-        width: 375px;
-    }
-    .equipments__item {
-        margin: 0 auto;
-        margin-top: -80px;
-    }
-    .doctor__inner {
-        width: 375px;
-        height: 400px;
-    }
-    .doctor__text {
-        margin-top: -50px;
-        margin-bottom: -50px;
-    }
-    .professionals {
-        width: 375px;
-    }
-    .advantages {
-        width: 375px;
-    }
-    .appointment-bottom {
-        width: 375px;
-    }
-    .tour {
-        width: 375px;
-    }
-    .footer {
-        width: 375px;
-    }
-} */
