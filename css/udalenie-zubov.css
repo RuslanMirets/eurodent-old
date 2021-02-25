@@ -579,43 +579,53 @@ body {
 }
 .price {
     background-color: #fff;
-    padding-top: 21px;
+    padding: 20px 0;
 }
 .price__text {
+    display: inline;
+    margin-right: 10px;
     font-weight: 300;
     font-size: 17px;
     line-height: 20px;
-    display: inline-block;
 }
-.price__btn {
-    padding: 3px 0;
-    display: inline-block;
+.price__link {
+    display: inline;
     font-weight: 300;
     font-size: 17px;
     line-height: 20px;
-    margin-left: 10px;
     color: #67bc9e;
     border-bottom: 1px dashed #67bc9e;
-    position: relative;
     transition: all 0.3s;
 }
-.price__btn::after {
-    content: url("../images/udalenie-zubov/arrow-up.svg");
-    position: absolute;
-    right: -18px;
-    top: 0;
-}
-.price__btn:hover {
+.price__link:hover {
     color: #67bc9e;
     border-bottom: 1px dashed transparent;
 }
-.price__list-item {
-    border-top: 1px solid #f3f7f6;
+.price__link:focus {
+    color: #67bc9e;
 }
-.price__list-container {
-    max-width: 1160px;
-    padding: 0 10px;
-    margin: 0 auto;
+.uk-open > .uk-accordion-title {
+    position: relative;
+}
+.uk-open > .uk-accordion-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -25px;
+    background-image: url("../images/udalenie-zubov/arrow-up.svg");
+}
+.uk-accordion-title {
+    position: relative;
+}
+.uk-accordion-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -25px;
+    background-image: url("../images/udalenie-zubov/arrow-down.svg");
+}
+.price__list-item {
+    border-top: 2px solid #f3f7f6;
     height: 65px;
     display: flex;
     justify-content: space-between;
@@ -632,6 +642,7 @@ body {
     line-height: 20px;
     margin-right: 44px;
 }
+
 .info__inner {
     margin-top: 70px;
     margin-bottom: 70px;

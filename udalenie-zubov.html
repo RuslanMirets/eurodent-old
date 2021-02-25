@@ -233,30 +233,29 @@
 
     <section class="price">
         <div class="container">
-            <p class="price__text">Ниже вы можете ознакомиться с ценами на удаление разных видов зубов.</p>
-            <a class="price__btn" href="#toggle-animation"
-                uk-toggle="target: #toggle-price; animation: uk-animation-slide-top-small">Смотреть прайс</a>
+            <div uk-accordion>
+                <div class="uk-open">
+                    <div class="price__text">Ниже вы можете ознакомиться с ценами на удаление разных видов зубов.</div>
+                    <a class="price__link uk-accordion-title" href="#">Смотреть прайс</a>
+                    <div class="uk-accordion-content">
+                        <ul class="price__list">
+                            <li class="price__list-item">
+                                <div class="price__list-name">Удаление молочных зубов</div>
+                                <div class="price__list-cost">от 160 000 руб</div>
+                            </li>
+                            <li class="price__list-item">
+                                <div class="price__list-name">Удаление молочных зубов</div>
+                                <div class="price__list-cost">от 160 000 руб</div>
+                            </li>
+                            <li class="price__list-item">
+                                <div class="price__list-name">Удаление молочных зубов</div>
+                                <div class="price__list-cost">от 160 000 руб</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <ul class="price__list" id="toggle-price">
-            <li class="price__list-item">
-                <div class="price__list-container">
-                    <div class="price__list-name">Удаление молочных зубов</div>
-                    <div class="price__list-cost">от 160 000 руб</div>
-                </div>
-            </li>
-            <li class="price__list-item">
-                <div class="price__list-container">
-                    <div class="price__list-name">Удаление молочных зубов</div>
-                    <div class="price__list-cost">от 160 000 руб</div>
-                </div>
-            </li>
-            <li class="price__list-item">
-                <div class="price__list-container">
-                    <div class="price__list-name">Удаление молочных зубов</div>
-                    <div class="price__list-cost">от 160 000 руб</div>
-                </div>
-            </li>
-        </ul>
     </section>
 
     <section class="info">
