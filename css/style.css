@@ -585,6 +585,10 @@ body {
     text-align: center;
     margin-bottom: 49px;
 }
+.reviews__list > * {
+    display: flex;
+    justify-content: center;
+}
 .reviews__slider-item {
     background-color: #f9f9f9;
 }
@@ -1082,6 +1086,9 @@ body {
     .header__btn {
         display: none;
     }
+    .reviews__list > * {
+        width: 50%;
+    }
 }
 @media (max-width: 1100px) {
     .patients__list > * {
@@ -1201,6 +1208,16 @@ body {
     }
     .patients__list > * {
         width: 50%;
+    }
+    .reviews__title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .reviews__list > * {
+        width: 100%;
+    }
+    .reviews__slider-ico {
+        width: 14%;
     }
 }
 @media (max-width: 710px) {
