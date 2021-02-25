@@ -819,6 +819,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
 @media (max-width: 1130px) {
     .header__bottom {
         justify-content: center;
