@@ -820,6 +820,21 @@ body {
     justify-content: space-between;
 }
 
+@media (max-width: 1140px) {
+    .footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .footer__inner {
+        grid-template-columns: 50% 50%;
+    }
+    .footer__item {
+        justify-self: center;
+    }
+    .footer__item:nth-child(3){
+        margin-top: -120px;
+    }
+}
 @media (max-width: 1130px) {
     .header__bottom {
         justify-content: center;
@@ -938,6 +953,21 @@ body {
     }
     .dentists__item:nth-child(2) {
         margin-left: 0;
+    }
+}
+@media (max-width: 560px) {
+    .footer__inner {
+        grid-template-columns: 1fr;
+    }
+    .footer__list {
+        margin-bottom: 0;
+    }
+    .footer__item {
+        margin-bottom: 20px;
+        justify-self: center;
+    }
+    .footer__item:nth-child(3){
+        margin-top: 0;
     }
 }
 @media (max-width: 400px) {

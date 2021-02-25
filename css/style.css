@@ -1128,6 +1128,21 @@ body {
         width: 50%;
     }
 }
+@media (max-width: 1140px) {
+    .footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .footer__inner {
+        grid-template-columns: 50% 50%;
+    }
+    .footer__item {
+        justify-self: center;
+    }
+    .footer__item:nth-child(3){
+        margin-top: -120px;
+    }
+}
 @media (max-width: 1130px) {
     .header__bottom {
         justify-content: center;
@@ -1438,6 +1453,19 @@ body {
     .professionals__list > * {
         width: 100%;
     }
+    .footer__inner {
+        grid-template-columns: 1fr;
+    }
+    .footer__list {
+        margin-bottom: 0;
+    }
+    .footer__item {
+        margin-bottom: 20px;
+        justify-self: center;
+    }
+    .footer__item:nth-child(3){
+        margin-top: 0;
+    }
 }
 @media (max-width: 540px) {
     .patients__title {
@@ -1511,7 +1539,7 @@ body {
     .advantages__item + .advantages__item {
         margin-top: 10px;
     }
-    .advantages__text{
+    .advantages__text {
         font-size: 16px;
     }
     .tour__title {
