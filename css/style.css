@@ -174,11 +174,7 @@ body {
 .modal__inner {
     width: 1004px;
     height: 591px;
-    background-color: #fff;
-    margin: auto;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    background-color: #fff;    
     display: flex;
     justify-content: space-between;
 }
