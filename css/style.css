@@ -1053,6 +1053,11 @@ body {
     justify-content: space-between;
 }
 
+@media (max-width: 1660px) {
+    .doctor__content {
+        margin-left: 10px;
+    }
+}
 @media (max-width: 1600px) {
     .top__slider-item {
         padding-left: 250px;
@@ -1103,6 +1108,17 @@ body {
     }
     .equipments__items {
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width: 1170px) {
+    .doctor__content {
+       margin-top: 40px;
+    }
+    .doctor__text {
+        font-size: 18px;
+    }
+    .doctor__img {
+        width: 50%;
     }
 }
 @media (max-width: 1130px) {
@@ -1231,6 +1247,19 @@ body {
         top: 9px;
     }
 }
+@media (max-width: 930px) {
+    .doctor__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .doctor__content {
+        order: 1;
+    }
+    .doctor__img {
+        margin-left: auto;
+        width: 70%;
+    }
+}
 @media (max-width: 900px) {
     .slider__arrow {
         display: none;
@@ -1251,7 +1280,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
     .equipments__item {
-        transform: scale(.9);
+        transform: scale(0.9);
     }
     .equipments__item-name {
         font-size: 18px;
@@ -1299,11 +1328,6 @@ body {
         display: none;
     }
 }
-@media (max-width: 640px) {
-    .equipments__items {
-        /* grid-template-columns: repeat(1, 1fr); */
-    }
-}
 @media (max-width: 600px) {
     .services__title {
         padding: 20px 0;
@@ -1328,6 +1352,13 @@ body {
     }
     .video__text {
         font-size: 18px;
+    }
+    .doctor__text {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    .doctor__name {
+        font-size: 14px;
     }
 }
 @media (max-width: 540px) {
@@ -1367,8 +1398,8 @@ body {
         max-width: 320px;
     }
     .label-checkbox {
-       text-align: center;
-       max-width: 320px;
+        text-align: center;
+        max-width: 320px;
     }
     .check-style {
         margin-left: -325px;
@@ -1384,8 +1415,8 @@ body {
     .interior__slider {
         margin-bottom: 30px;
     }
-    .interior__list > *{
-        transform: scale(.8);
+    .interior__list > * {
+        transform: scale(0.8);
     }
 }
 @media (max-width: 400px) {
@@ -1406,7 +1437,7 @@ body {
         width: 14%;
     }
 }
-@media (max-width: 332px){
+@media (max-width: 332px) {
     .check-style {
         margin-left: -250px;
     }
