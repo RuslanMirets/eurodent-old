@@ -785,7 +785,7 @@ body {
 .professionals__slider {
     margin-bottom: 100px;
 }
-.professionals__list > *{
+.professionals__list > * {
     display: flex;
     justify-content: center;
 }
@@ -1119,7 +1119,7 @@ body {
 }
 @media (max-width: 1170px) {
     .doctor__content {
-       margin-top: 40px;
+        margin-top: 40px;
     }
     .doctor__text {
         font-size: 18px;
@@ -1147,6 +1147,9 @@ body {
     .slider-dotnav-interior {
         display: none;
     }
+    .advantages__text {
+        margin-left: 30px;
+    }
 }
 @media (max-width: 1100px) {
     .patients__list > * {
@@ -1165,6 +1168,13 @@ body {
     }
     .professionals__list > * {
         width: 33%;
+    }
+    .appointment-bottom {
+        height: auto;
+    }
+    .appointment-bottom__title {
+        padding: 30px 0 20px;
+        font-size: 26px;
     }
 }
 @media (max-width: 1050px) {
@@ -1202,6 +1212,13 @@ body {
     }
     .video-popup {
         margin-top: 10px;
+    }
+    .tour {
+        padding-top: 20px;
+    }
+    .tour__title {
+        font-size: 26px;
+        margin-bottom: 20px;
     }
 }
 @media (max-width: 960px) {
@@ -1277,6 +1294,28 @@ body {
     .top {
         margin-bottom: 20px;
     }
+    .advantages__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .advantages__left {
+        padding-right: 0px;
+    }
+    .advantages__img {
+        margin-bottom: 20px;
+    }
+    .advantages__right {
+        margin-top: 20px;
+    }
+    .advantages__block-1 {
+        width: 300px;
+    }
+    .advantages__block-2 {
+        width: 260px;
+    }
+    .advantages__block-3 {
+        width: 310px;
+    }
 }
 @media (max-width: 840px) {
     .professionals {
@@ -1285,7 +1324,7 @@ body {
     .professionals__title {
         font-size: 26px;
     }
-    .professionals__list > *{
+    .professionals__list > * {
         width: 50%;
     }
 }
@@ -1305,6 +1344,11 @@ body {
     }
     .equipments__item-name {
         font-size: 18px;
+    }
+}
+@media (max-width: 770px) {
+    .advantages__right {
+        width: 90%;
     }
 }
 @media (max-width: 750px) {
@@ -1327,6 +1371,9 @@ body {
     }
     .reviews__slider-ico {
         width: 14%;
+    }
+    .tour__title {
+        font-size: 22px;
     }
 }
 @media (max-width: 730px) {
@@ -1451,6 +1498,25 @@ body {
     }
     .interior__list > * {
         transform: scale(0.8);
+    }
+    .advantages__title {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+    .advantages__right {
+        width: 99%;
+        margin-top: 0;
+        padding-left: 5px;
+    }
+    .advantages__item + .advantages__item {
+        margin-top: 10px;
+    }
+    .advantages__text{
+        font-size: 16px;
+    }
+    .tour__title {
+        font-size: 20px;
+        line-height: 1.2;
     }
 }
 @media (max-width: 400px) {
