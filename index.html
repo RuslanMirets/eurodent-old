@@ -70,9 +70,10 @@
     <div id="modal" uk-modal>
         <div class="modal__inner uk-modal-dialog">
             <div class="modal__content">
-                <h1 class="modal__title">Запишитесь на приём</h1>
-                <p class="modal__text">Заполните простую форму, и наш специалист <br>
+                <h1 class="modal__title" id="modal-title">Запишитесь на приём</h1>
+                <p class="modal__text" id="modal-text">Заполните простую форму, и наш специалист <br>
                     свяжется с вами в ближайшее время</p>
+                    <div class="modal__success-message" id="success-message-modal"></div>
                 <form class="modal__form" id="modal-form">
                     <div class="error-message" id="error-modal"></div>
                     <div class="modal__inputs">
@@ -383,8 +384,8 @@
         <div class="appointment__inner">
             <div class="container">
                 <h1 class="appointment__title">Запишитесь на приём</h1>
+                <div class="appointment-message" id="appointment-message"></div>
                 <form class="appointment__form" id="appointment__form">
-                    <div class="error-message" id="error"></div>
                     <div class="appointment__inputs">
                         <input class="appointment__input name" type="text" placeholder="Ваше имя">
                         <input class="appointment__input phone" id="phone" type="tel" placeholder="Ваш телефон">
@@ -871,8 +872,8 @@
     <section class="appointment-bottom">
         <div class="container">
             <h1 class="appointment-bottom__title">Запишитесь на приём</h1>
+            <div class="appointment-message" id="appointment-message-bottom"></div>
             <form class="appointment__form" id="appointment__form-bottom">
-                <div class="error-message" id="error-bottom"></div>
                 <div class="appointment__inputs">
                     <input class="appointment__input name" type="text" placeholder="Ваше имя">
                     <input class="appointment__input phone" id="phone-bottom" type="tel" placeholder="Ваш телефон">

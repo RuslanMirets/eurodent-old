@@ -11,7 +11,8 @@ $(function () {
     const phoneModal = document.getElementById('phone-modal')
     const checkboxModal = document.getElementById('checkbox-modal')
     const formModal = document.getElementById('modal-form')
-    const errorElementModal = document.getElementById('error-modal')
+    // const errorElementModal = document.getElementById('error-modal')
+    const messageElementModal = document.getElementById('success-message-modal')
 
     formModal.addEventListener('submit', (e) => {
         let messagesModal = []
@@ -22,11 +23,14 @@ $(function () {
             messagesModal.push('Подтвердите согласие!')
         }
         else if (checkboxModal.checked) {
-            messagesModal.push('Спасибо, наш менеджер свяжется с Вами в ближайшее время.')
+            messagesModal.push('Спасибо, наш менеджер свяжется с Вами в ближайшее время.');
+            document.getElementById('modal-form').hidden = true;
+            document.getElementById('modal-title').hidden = true;
+            document.getElementById('modal-text').hidden = true;
         }
         if (messagesModal.length > 0) {
             e.preventDefault()
-            errorElementModal.innerText = messagesModal.join('! ')
+            messageElementModal.innerText = messagesModal.join('! ')
         }
     })
 

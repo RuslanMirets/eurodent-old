@@ -180,12 +180,10 @@ body {
     justify-content: space-between;
 }
 .modal__content {
-    position: relative;
-    left: 50%;
-    transform: translateX(-120%);
+    width: 100%;
+    padding-top: 90px;
 }
 .modal__title {
-    margin-top: 90px;
     font-weight: 300;
     font-size: 30px;
     line-height: 36px;
@@ -268,6 +266,9 @@ body {
 .modal__btn {
     width: 360px;
     height: 53px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     outline: none;
     background-color: #67bc9e;
     border-radius: 40px;
@@ -299,11 +300,11 @@ body {
     margin-top: -40px;
     margin-bottom: 10px;
 }
-.error-message {
+.modal__success-message {
     font-size: 18px;
     text-align: center;
-    color: #000;
-    margin-bottom: 20px;
+    margin-top: -30px;
+    padding-bottom: 41px;
 }
 .top {
     background-image: url("../images/udalenie-zubov/top-bg.png");
@@ -402,6 +403,25 @@ body {
     color: #fff;
     background-color: #f39035;
 }
+.uk-modal-dialog-lightbox>.uk-close:first-child {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    margin: 0;
+    float: none;
+    background-color: #67bc9e;
+    transition: all .3s;
+}
+.uk-modal-dialog-lightbox>.uk-close:first-child:hover {
+    background-color: #f39035;
+}
+.uk-close:after {
+    content: url('../images/close-btn.svg');
+    width: 9px;
+    transform: translate(2px, 3px);
+    opacity: 1;
+}
+
 .recommendation {
     background-color: #fff;
 }

@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/components/slidenav.almost-flat.min.css">
+    <link rel="stylesheet" href="css/uikit.almost-flat.min.css">
     <link rel="stylesheet" href="css/udalenie-zubov.css">
 </head>
 
@@ -70,9 +72,10 @@
     <div id="modal" uk-modal>
         <div class="modal__inner uk-modal-dialog">
             <div class="modal__content">
-                <h1 class="modal__title">Запишитесь на приём</h1>
-                <p class="modal__text">Заполните простую форму, и наш специалист <br>
+                <h1 class="modal__title" id="modal-title">Запишитесь на приём</h1>
+                <p class="modal__text" id="modal-text">Заполните простую форму, и наш специалист <br>
                     свяжется с вами в ближайшее время</p>
+                <div class="modal__success-message" id="success-message-modal"></div>
                 <form class="modal__form" id="modal-form">
                     <div class="error-message" id="error-modal"></div>
                     <div class="modal__inputs">
@@ -107,28 +110,40 @@
             <div class="reviews__slider uk-position-relative" uk-slider>
                 <ul class="reviews__list uk-slider-items uk-child-width-1-3">
                     <li>
-                        <div class="reviews__slider-item">
-                            <img class="reviews__slider-img" src="images/udalenie-zubov/reviews-slider-1.jpg" alt="">
-                            <img class="reviews__slider-ico" src="images/udalenie-zubov/magnifier-ico.svg" alt="">
-                        </div>
+                        <a href="images/udalenie-zubov/reviews-slider-1.jpg" data-uk-lightbox="{group:'reviews'}">
+                            <div class="reviews__slider-item">
+                                <img class="reviews__slider-img" src="images/udalenie-zubov/reviews-slider-1.jpg"
+                                    alt="">
+                                <img class="reviews__slider-ico" src="images/udalenie-zubov/magnifier-ico.svg" alt="">
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="reviews__slider-item">
-                            <img class="reviews__slider-img" src="images/udalenie-zubov/reviews-slider-2.jpg" alt="">
-                            <img class="reviews__slider-ico" src="images/udalenie-zubov/magnifier-ico.svg" alt="">
-                        </div>
+                        <a href="images/udalenie-zubov/reviews-slider-2.jpg" data-uk-lightbox="{group:'reviews'}">
+                            <div class="reviews__slider-item">
+                                <img class="reviews__slider-img" src="images/udalenie-zubov/reviews-slider-2.jpg"
+                                    alt="">
+                                <img class="reviews__slider-ico" src="images/udalenie-zubov/magnifier-ico.svg" alt="">
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="reviews__slider-item">
-                            <img class="reviews__slider-img" src="images/udalenie-zubov/reviews-slider-3.jpg" alt="">
-                            <img class="reviews__slider-ico" src="images/udalenie-zubov/magnifier-ico.svg" alt="">
-                        </div>
+                        <a href="images/udalenie-zubov/reviews-slider-3.jpg" data-uk-lightbox="{group:'reviews'}">
+                            <div class="reviews__slider-item">
+                                <img class="reviews__slider-img" src="images/udalenie-zubov/reviews-slider-3.jpg"
+                                    alt="">
+                                <img class="reviews__slider-ico" src="images/udalenie-zubov/magnifier-ico.svg" alt="">
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <div class="reviews__slider-item">
-                            <img class="reviews__slider-img" src="images/udalenie-zubov/reviews-slider-4.jpg" alt="">
-                            <img class="reviews__slider-ico" src="images/udalenie-zubov/magnifier-ico.svg" alt="">
-                        </div>
+                        <a href="images/udalenie-zubov/reviews-slider-4.jpg" data-uk-lightbox="{group:'reviews'}">
+                            <div class="reviews__slider-item">
+                                <img class="reviews__slider-img" src="images/udalenie-zubov/reviews-slider-4.jpg"
+                                    alt="">
+                                <img class="reviews__slider-ico" src="images/udalenie-zubov/magnifier-ico.svg" alt="">
+                            </div>
+                        </a>
                     </li>
                 </ul>
                 <a class="slider__arrow uk-position-center-left" href="#" uk-slider-item="previous">
@@ -355,7 +370,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.js"></script>
+    <script src="js/components/uikit.min.js"></script>
+    <script src="js/components/lightbox.min.js"></script>
     <script src="js/udalenie-zubov.js"></script>
 </body>
 

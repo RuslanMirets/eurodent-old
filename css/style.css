@@ -179,12 +179,10 @@ body {
     justify-content: space-between;
 }
 .modal__content {
-    position: relative;
-    left: 50%;
-    transform: translateX(-120%);
+    width: 100%;
+    padding-top: 90px;
 }
 .modal__title {
-    margin-top: 90px;
     font-weight: 300;
     font-size: 30px;
     line-height: 36px;
@@ -238,6 +236,9 @@ body {
 .modal__btn {
     width: 360px;
     height: 53px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     outline: none;
     background-color: #67bc9e;
     border-radius: 40px;
@@ -488,16 +489,25 @@ body {
 }
 .appointment__title {
     margin-top: 62px;
-    padding-bottom: 47px;
     font-size: 30px;
     line-height: 36px;
     text-align: center;
 }
-.error-message {
+.appointment-message {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 30p;
+    padding-bottom: 40px;
+    font-size: 22px;
+    transition-delay: 1s;
+}
+.modal__success-message {
     font-size: 18px;
     text-align: center;
-    color: #000;
-    margin-bottom: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: -30px;
+    padding-bottom: 41px;
 }
 .appointment__inputs {
     display: flex;
@@ -914,7 +924,7 @@ body {
     height: 300px;
 }
 .appointment-bottom__title {
-    padding: 50px 0 47px;
+    padding-top: 50px;
     text-align: center;
 }
 
